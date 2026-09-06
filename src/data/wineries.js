@@ -6,7 +6,7 @@ const popularByLake={
   'Canandaigua Lake':['Ravines Wine Cellars','Inspire Moore Winery & Vineyard','Billsboro Winery','Naples Valley Wine Cellars','Kettle Ridge Farm'],
   'Keuka Lake':['Konstantin D. Frank &Sons Vinifera Wine Cellars','Weis Vineyards','Heron Hill Winery','Keuka Spring Vineyards','Domaine Leseurre','Keuka Lake Vineyards','Point Of The Bluff Vineyard','Hunt Country Vineyards'],
   'Seneca Lake':['Hermann J. Wiemer Vineyard','Boundary Breaks','Red Newt Cellars','Wagner Vineyards','Glenora Wine Cellars','Damiani Wine Cellars','Lakewood Vineyards','Forge Cellars','Atwater Vineyards','Lamoreaux Landing Wine'],
-  'Cayuga Lake':['Heart & Hands Wine Company','Treleaven','Long Point Winery','Bright Leaf Vineyard','Bet The Farm','Quarry Ridge Winery']
+  'Cayuga Lake':['Heart & Hands Wine Company','Constantia Wine Company','Treleaven','Long Point Winery','Bright Leaf Vineyard','Bet The Farm','Quarry Ridge Winery']
 };
 const discoveryTieBreak=name=>[...name].reduce((total,char)=>(total*31+char.charCodeAt(0))%997,0);
 const counts={};
@@ -36,5 +36,28 @@ if(heartAndHands)Object.assign(heartAndHands,{
     ['2024 Nutt Road Pinot Noir','Pinot Noir','$48.99','Pinot & Family Flight','A vineyard-designated Pinot Noir included in the Pinot & Family flight.']
   ]
 });
-export const wineries=heartAndHands?[heartAndHands,...regionalWineries.filter(winery=>winery!==heartAndHands)]:regionalWineries;
+const constantia=regionalWineries.find(winery=>winery.name==='Constantia Wine Company');
+if(constantia)Object.assign(constantia,{
+  tags:['Cayuga','Menu available','Choose-your-own tasting'],
+  desc:'A Cayuga Lake winery in Scipio Center offering white, rosé and red Finger Lakes wines. Build a tasting from the uploaded menu and rate every selection with the One Sip scale.',
+  verification:'Menu supplied by a Sips traveler — availability may change',
+  menuNotice:'Menu photographed September 2026. Choose five 1 oz pours for $12 or four 2 oz pours served in carafes for $15. Confirm current wines, prices and hours before visiting.',
+  flightPrice:'From $12',
+  wines:[
+    ['2025 Grüner Veltliner','Finger Lakes AVA · Cayuga Lake','$24','Whites','Aromatic and crisp, sustainably grown over shale and fermented and aged in stainless steel.'],
+    ['2024 Chardonnay','Finger Lakes AVA · Cayuga Lake','$23','Whites','Easy-drinking Chardonnay blending stainless-steel and barrel-aged lots for complexity and texture.'],
+    ['2024 Barrel Reserve Chardonnay','Finger Lakes AVA · Cayuga Lake','$26','Whites','East-side Cayuga fruit aged in French oak for rich texture while retaining vibrant fruit.'],
+    ['2023 Dry Riesling','Finger Lakes AVA','$22','Whites','White peach and citrus with bright acidity and limestone minerality.'],
+    ['2021 Semi-Dry Riesling','Finger Lakes AVA · Seneca Lake','$19','Whites','Pear, grapefruit and juicy apricot with floral hints, minerality and bright acidity.'],
+    ['2020 Semi-Sweet Riesling','Finger Lakes AVA · Seneca Lake','$18','Whites','Tropical fruit and citrus with pink grapefruit, honeysuckle and melon.'],
+    ['2024 Late Harvest Riesling','Finger Lakes AVA · Cayuga Lake','$28','Whites','A hand-harvested, botrytized Riesling with concentrated flavor and a cool-fermented finish.'],
+    ['2025 Dry Rosé of Cabernet Franc','Finger Lakes AVA · Seneca Lake','$24','Dry Rosé & Reds','Crisp and fruity, made from sustainably grown Cabernet Franc and aged in stainless steel.'],
+    ['2024 Pinot Noir','Finger Lakes AVA · Cayuga Lake','$16 / $26','Dry Rosé & Reds','Hand-picked Cayuga fruit fermented in small lots and aged in Burgundian French oak.'],
+    ['2021 Merlot','Finger Lakes AVA · Cayuga Lake','$25','Dry Rosé & Reds','Bright cherry and plum with vanilla, soft tannins and a balanced, lingering finish.'],
+    ['2024 Cabernet Franc','Finger Lakes AVA · Cayuga Lake','$28','Dry Rosé & Reds','Red and black fruit with ten months in French oak.','92 points JS'],
+    ['2024 Uniquity Red Blend','Finger Lakes AVA · Cayuga Lake','$32','Dry Rosé & Reds','A structured Bordeaux-style blend with cherry, wild berry, integrated tannins and balanced acidity.']
+  ]
+});
+const menuWineries=[heartAndHands,constantia].filter(Boolean);
+export const wineries=[...menuWineries,...regionalWineries.filter(winery=>!menuWineries.includes(winery))];
 export const lakes=Object.keys(lakeX);
