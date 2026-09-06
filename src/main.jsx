@@ -1,0 +1,55 @@
+import React, {useEffect, useMemo, useState} from 'react';
+import {createRoot} from 'react-dom/client';
+import {Map, Route, Wine, Users, UserRound, Search, Plus, MapPin, Clock, Heart, ChevronRight, X, Check, Sparkles, Navigation, Share2, Store, Tag} from 'lucide-react';
+import './styles.css';
+
+const wineries=[
+ {id:1,name:'Lakeview Cellars',lake:'Seneca Lake',area:'West Shore',distance:'12 min',score:4.7,ratings:428,tags:['Dry Riesling','Lake views'],x:52,y:33,color:'#722f47',desc:'Small-lot wines, a relaxed terrace, and sweeping lake views.',wines:[['2025 Dry Riesling','Riesling','$24'],['2024 Cabernet Franc','Red','$32'],['2025 Grüner Veltliner','White','$26']]},
+ {id:2,name:'Fox Run Vineyards',lake:'Seneca Lake',area:'West Shore',distance:'18 min',score:4.5,ratings:611,tags:['Food','Groups'],x:43,y:51,color:'#aa6b32',desc:'An easy group stop with food pairings and a broad tasting flight.',wines:[['2024 Semi-Dry Riesling','Riesling','$22'],['2023 Lemberger','Red','$29'],['2025 Chardonnay','White','$25']]},
+ {id:3,name:'Keuka Ridge Wine Co.',lake:'Keuka Lake',area:'East Bluff',distance:'31 min',score:4.8,ratings:194,tags:['Off the trail','Cab Franc'],x:23,y:68,color:'#315c54',desc:'A quieter hillside tasting room known for expressive cool-climate reds.',wines:[['2023 Cabernet Franc Reserve','Red','$38'],['2025 Dry Rosé','Rosé','$23'],['2024 Blaufränkisch','Red','$34']]},
+ {id:4,name:'Cayuga Shore Wines',lake:'Cayuga Lake',area:'West Shore',distance:'42 min',score:4.6,ratings:287,tags:['Sparkling','Picnic'],x:77,y:45,color:'#2e6073',desc:'Bright sparkling wines, lawns by the vines, and an unhurried pace.',wines:[['2022 Traditional Sparkling','Sparkling','$39'],['2025 Pinot Gris','White','$25'],['2024 Cabernet Franc Rosé','Rosé','$27']]}
+];
+const scale=[['Liked it','Nice sip'],['A glass','I’d order it'],['A bottle','Take one home'],['Multiple','Stock me up'],['Anytime','Ship it home']];
+
+function App(){
+ const [tab,setTab]=useState('discover'); const [selected,setSelected]=useState(null); const [trip,setTrip]=useState(()=>JSON.parse(localStorage.getItem('onesip-trip')||'[1,3]')); const [ratings,setRatings]=useState(()=>JSON.parse(localStorage.getItem('onesip-ratings')||'{}')); const [toast,setToast]=useState('');
+ useEffect(()=>localStorage.setItem('onesip-trip',JSON.stringify(trip)),[trip]); useEffect(()=>localStorage.setItem('onesip-ratings',JSON.stringify(ratings)),[ratings]);
+ const rated=Object.values(ratings).length; const favorites=useMemo(()=>Object.entries(ratings).filter(([,v])=>v>=4),[ratings]);
+ const flash=t=>{setToast(t);setTimeout(()=>setToast(''),1800)};
+ const addTrip=id=>{setTrip(v=>v.includes(id)?v.filter(x=>x!==id):[...v,id]);flash(trip.includes(id)?'Removed from trip':'Added to your route')};
+ return <div className="shell">
+  <header><button className="brand" onClick={()=>setTab('discover')}><span>1</span><b>ONE SIP</b></button><div className="region"><MapPin size={15}/> Finger Lakes, NY</div><button className="avatar">AC</button></header>
+  <main>
+   {tab==='discover'&&<Discover onOpen={setSelected} trip={trip} addTrip={addTrip}/>} 
+   {tab==='trip'&&<Trip trip={trip} ratings={ratings} onOpen={setSelected}/>} 
+   {tab==='taste'&&<Taste wineries={wineries} ratings={ratings} setRatings={setRatings} flash={flash}/>} 
+   {tab==='friends'&&<Friends ratings={ratings}/>} 
+   {tab==='profile'&&<Profile rated={rated} favorites={favorites}/>} 
+  </main>
+  <nav>{[['discover',Map,'Explore'],['trip',Route,'Trip'],['taste',Wine,'Taste'],['friends',Users,'Friends'],['profile',UserRound,'You']].map(([id,I,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}><I size={21}/><span>{label}</span></button>)}</nav>
+  {selected&&<Winery winery={selected} inTrip={trip.includes(selected.id)} addTrip={addTrip} ratings={ratings} setRatings={setRatings} close={()=>setSelected(null)} flash={flash}/>} 
+  {toast&&<div className="toast"><Check size={18}/>{toast}</div>}
+ </div>
+}
+
+function Discover({onOpen,trip,addTrip}){const [query,setQuery]=useState('');const shown=wineries.filter(w=>(w.name+w.lake+w.tags.join('')).toLowerCase().includes(query.toLowerCase()));return <>
+ <section className="hero"><img src="/finger-lakes-tasting.jpg"/><div className="heroShade"/><div className="heroCopy"><small>YOUR NEXT POUR</small><h1>Find the wines<br/>worth remembering.</h1><p>Plan together. Taste everything. Keep what you love.</p></div><div className="search"><Search size={19}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Winery, lake, or wine"/></div></section>
+ <section className="section mapSection"><div className="titleRow"><div><small>EXPLORE THE REGION</small><h2>Finger Lakes</h2></div><button className="textBtn">Map layers <ChevronRight size={16}/></button></div>
+ <div className="mapCard"><div className="topo"></div><div className="lake l1"></div><div className="lake l2"></div><div className="lake l3"></div><span className="lakeName n1">KEUKA</span><span className="lakeName n2">SENECA</span><span className="lakeName n3">CAYUGA</span>{wineries.map(w=><button key={w.id} className="pin" style={{left:w.x+'%',top:w.y+'%',background:w.color}} onClick={()=>onOpen(w)}><Wine size={15}/><i>{w.score}</i></button>)}<div className="mapHint"><Navigation size={15}/> Tap a winery to explore</div></div></section>
+ <section className="section"><div className="titleRow"><div><small>POURS NEAR YOUR ROUTE</small><h2>Worth the detour</h2></div></div><div className="cards">{shown.map(w=><article className="wineryCard" key={w.id} onClick={()=>onOpen(w)}><div className="cardTop"><span style={{background:w.color}}><Wine size={20}/></span><button onClick={e=>{e.stopPropagation();addTrip(w.id)}} className={trip.includes(w.id)?'saved':''}>{trip.includes(w.id)?<Check/>:<Plus/>}</button></div><small>{w.lake} · {w.distance}</small><h3>{w.name}</h3><div className="tags">{w.tags.map(x=><i key={x}>{x}</i>)}</div><div className="cardFoot"><b>{w.score}</b><span>{w.ratings} community ratings</span><ChevronRight/></div></article>)}</div></section>
+ <section className="deal"><Tag/><div><small>ONE SIP OFFER</small><h3>A bottle you loved, waiting at home.</h3><p>Rate a wine 5 and we’ll save it for future winery offers.</p></div><button>See how</button></section>
+ </>}
+
+function Trip({trip,ratings,onOpen}){const list=wineries.filter(w=>trip.includes(w.id));return <section className="page"><div className="pageHead"><small>OCTOBER 10–12</small><h1>Finger Lakes Weekend</h1><div className="people"><span>AC</span><span>JC</span><span>MK</span><button><Plus size={16}/></button><b>3 friends</b></div></div><div className="tripStats"><div><b>{list.length}</b><span>wineries</span></div><div><b>47 mi</b><span>planned</span></div><div><b>{Object.keys(ratings).length}</b><span>wines rated</span></div></div><div className="routeLine">{list.map((w,i)=><article key={w.id} onClick={()=>onOpen(w)}><div className="stop"><span>{i+1}</span>{i<list.length-1&&<i/>}</div><div><small>{i===0?'11:00 AM':'2:15 PM'} · {w.area}</small><h3>{w.name}</h3><p>{w.desc}</p><em>{w.wines.length} wines pouring</em></div><ChevronRight/></article>)}</div><button className="primary"><Share2 size={18}/> Invite friends to this trip</button></section>}
+
+function Taste({wineries,ratings,setRatings,flash}){const w=wineries[0];return <section className="page"><div className="tasteHead"><small>NOW TASTING</small><h1>{w.name}</h1><p>{w.wines.length} wines in today’s flight</p></div><RatingList winery={w} ratings={ratings} setRatings={setRatings} flash={flash}/></section>}
+
+function RatingList({winery,ratings,setRatings,flash}){return <div className="wineList">{winery.wines.map(([name,type,price],idx)=>{const key=winery.id+'-'+idx;return <article key={name}><div className="wineInfo"><span>{idx+1}</span><div><small>{type} · {price}</small><h3>{name}</h3></div>{ratings[key]&&<b>{ratings[key]}</b>}</div><div className="rating">{scale.map((s,i)=><button title={s[1]} className={ratings[key]===i+1?'picked':''} onClick={()=>{setRatings(v=>({...v,[key]:i+1}));flash(i===4?'Saved to your anytime list':'Rating saved')}} key={s[0]}><strong>{i+1}</strong><span>{s[0]}</span></button>)}</div></article>})}</div>}
+
+function Friends({ratings}){return <section className="page"><div className="pageHead"><small>SHARED TASTING</small><h1>Your group agrees on the good stuff.</h1><p>Individual scores stay personal until everyone finishes the flight.</p></div><div className="consensus"><Sparkles/><small>GROUP FAVORITE</small><h2>2025 Dry Riesling</h2><p>Everyone would buy a bottle. Anthony and Jess rated it a 5.</p><div className="faceRow"><span>AC <b>5</b></span><span>JC <b>5</b></span><span>MK <b>3</b></span></div></div><h2 className="subhead">Trip leaderboard</h2>{['Dry Riesling','Cabernet Franc','Grüner Veltliner'].map((x,i)=><div className="leader" key={x}><b>{i+1}</b><div><strong>{x}</strong><span>{[4.7,4.3,3.9][i]} group score</span></div><div className="bar"><i style={{width:[94,86,78][i]+'%'}}/></div></div>)}<button className="primary"><Share2 size={18}/> Share trip recap</button></section>}
+
+function Profile({rated,favorites}){return <section className="page"><div className="profileTop"><div className="bigAvatar">AC</div><small>YOUR CELLAR MEMORY</small><h1>Anthony</h1><p>Dry Riesling explorer · 3 Finger Lakes trips</p></div><div className="tripStats"><div><b>{rated||6}</b><span>wines tasted</span></div><div><b>{favorites.length||3}</b><span>favorites</span></div><div><b>7</b><span>wineries</span></div></div><div className="tasteDNA"><small>YOUR TASTE</small><h2>Bright, dry & cool-climate</h2><p>You consistently save dry Riesling, Cabernet Franc and mineral-driven whites.</p><div className="dna"><i style={{width:'88%'}}/><span>Dry</span><i style={{width:'72%'}}/><span>Acid</span><i style={{width:'43%'}}/><span>Body</span></div></div><div className="menu"><button><Heart/> Wines I’d order again <ChevronRight/></button><button><Route/> Past trips & maps <ChevronRight/></button><button><Store/> Wine club preview <ChevronRight/></button></div></section>}
+
+function Winery({winery,inTrip,addTrip,ratings,setRatings,close,flash}){return <div className="overlay" onClick={close}><section className="sheet" onClick={e=>e.stopPropagation()}><button className="close" onClick={close}><X/></button><div className="sheetHero" style={{background:`linear-gradient(135deg,${winery.color},#21141a)`}}><Wine/><small>{winery.lake} · {winery.area}</small><h2>{winery.name}</h2><div><b>{winery.score}</b> from {winery.ratings} tastings</div></div><div className="sheetBody"><p>{winery.desc}</p><div className="actions"><button className={inTrip?'added':''} onClick={()=>addTrip(winery.id)}>{inTrip?<Check/>:<Plus/>}{inTrip?'On your trip':'Add to trip'}</button><button><Navigation/>Directions</button></div><div className="titleRow"><div><small>POURING NOW</small><h2>Today’s tasting</h2></div></div><RatingList winery={winery} ratings={ratings} setRatings={setRatings} flash={flash}/></div></section></div>}
+
+createRoot(document.getElementById('root')).render(<App/>);
