@@ -9,6 +9,8 @@ export default defineConfig({
     trip:resolve(import.meta.dirname,'trip-planner/index.html'),
     tasting:resolve(import.meta.dirname,'wine-tasting/index.html'),
     friends:resolve(import.meta.dirname,'shared-tastings/index.html'),
-    journal:resolve(import.meta.dirname,'my-wine-journal/index.html')
+    journal:resolve(import.meta.dirname,'my-wine-journal/index.html'),
+    wineryLogin:resolve(import.meta.dirname,'winery-login/index.html'),
+    wineryDashboard:resolve(import.meta.dirname,'winery-dashboard/index.html')
   }}}
 });

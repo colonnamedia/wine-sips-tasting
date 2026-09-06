@@ -1,15 +1,18 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {createRoot} from 'react-dom/client';
 import {Map, Route, Wine, Users, UserRound, Search, Plus, MapPin, Heart, ChevronRight, X, Check, Sparkles, Navigation, Share2, Store, Tag, Download, Share, Mail, LockKeyhole, LogOut, Globe2} from 'lucide-react';
-import {wineries,lakes} from './data/wineries';
+import {wineries as staticWineries,lakes} from './data/wineries';
 import {supabase,supabaseConfigured} from './lib/supabase';
+import {WineryDashboard,WineryPortal} from './winery-admin';
 import './styles.css';
 import './enhancements.css';
 import './auth.css';
 import './regions.css';
 
+let wineries=staticWineries;
+
 const scale=[['Liked it','Nice sip'],['A glass','I’d order it'],['A bottle','Take one home'],['Multiple','Stock me up'],['Anytime','Ship it home']];
-const routes={discover:'/',trip:'/trip-planner',taste:'/wine-tasting',friends:'/shared-tastings',profile:'/my-wine-journal'};
+const routes={discover:'/',trip:'/trip-planner',taste:'/wine-tasting',friends:'/shared-tastings',profile:'/my-wine-journal',wineryLogin:'/winery-login',wineryAdmin:'/winery-dashboard'};
 const milesBetween=(a,b)=>{const toRad=value=>value*Math.PI/180;const lat1=toRad(a.latitude),lat2=toRad(b.latitude);const dLat=lat2-lat1,dLng=toRad(b.longitude-a.longitude);const h=Math.sin(dLat/2)**2+Math.cos(lat1)*Math.cos(lat2)*Math.sin(dLng/2)**2;return 3958.8*2*Math.atan2(Math.sqrt(h),Math.sqrt(1-h))};
 const optimizeStops=(stops,start)=>{if(stops.length<2)return stops;const remaining=[...stops];const ordered=[];let current=start;if(!current){current=remaining.shift();ordered.push(current)}while(remaining.length){let closest=0;for(let i=1;i<remaining.length;i++)if(milesBetween(current,remaining[i])<milesBetween(current,remaining[closest]))closest=i;current=remaining.splice(closest,1)[0];ordered.push(current)}return ordered};
 const regions=[
@@ -22,18 +25,22 @@ const seo={
  trip:['Finger Lakes Wine Trip Planner | Sips Wine Tasting Journey','Build a Finger Lakes winery itinerary, organize stops, and share your wine journey with friends.'],
  taste:['Rate a Finger Lakes Wine Tasting | Sips Wine Tasting Journey','Rate every wine with the One Sip five-level scale and save the bottles you want to buy again.'],
  friends:['Shared Wine Tastings With Friends | Sips Wine Tasting Journey','Compare wine ratings with friends, find group favorites, and create a shareable Finger Lakes trip recap.'],
- profile:['Your Wine Journal & Tasting History | Sips Wine Tasting Journey','Save wines, wineries, tasting notes, past routes, and personalized Finger Lakes wine recommendations.']
+ profile:['Your Wine Journal & Tasting History | Sips Wine Tasting Journey','Save wines, wineries, tasting notes, past routes, and personalized Finger Lakes wine recommendations.'],
+ wineryLogin:['Claim Your Finger Lakes Winery | Sips','Claim a Finger Lakes winery profile and request secure access to manage tasting menus on Sips.'],
+ wineryAdmin:['Winery Tasting Menu Dashboard | Sips','Securely upload, edit, preview and publish winery tasting menus on Sips.']
 };
 function routeToTab(){const p=location.pathname;return Object.entries(routes).find(([,v])=>v===p)?.[0]||'discover'}
-function setMeta(tab){const [title,description]=seo[tab];document.title=title;document.querySelector('meta[name="description"]')?.setAttribute('content',description);document.querySelector('meta[property="og:title"]')?.setAttribute('content',title);document.querySelector('meta[property="og:description"]')?.setAttribute('content',description);let c=document.querySelector('link[rel="canonical"]');if(c)c.href=`${location.origin}${routes[tab]}`;let schema=document.getElementById('page-schema');if(!schema){schema=document.createElement('script');schema.type='application/ld+json';schema.id='page-schema';document.head.appendChild(schema)}schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'WebApplication',name:'Sips — Wine Tasting Journey',url:`${location.origin}${routes[tab]}`,description,applicationCategory:'TravelApplication',operatingSystem:'Any',offers:{'@type':'Offer',price:'0',priceCurrency:'USD'},areaServed:{'@type':'Place',name:'Finger Lakes, New York'}})}
+function setMeta(tab){const [title,description]=seo[tab];document.title=title;document.querySelector('meta[name="description"]')?.setAttribute('content',description);document.querySelector('meta[property="og:title"]')?.setAttribute('content',title);document.querySelector('meta[property="og:description"]')?.setAttribute('content',description);document.querySelector('meta[name="robots"]')?.setAttribute('content',tab==='wineryAdmin'?'noindex, nofollow':'index, follow, max-image-preview:large');let c=document.querySelector('link[rel="canonical"]');if(c)c.href=`${location.origin}${routes[tab]}`;let schema=document.getElementById('page-schema');if(!schema){schema=document.createElement('script');schema.type='application/ld+json';schema.id='page-schema';document.head.appendChild(schema)}schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'WebApplication',name:'Sips — Wine Tasting Journey',url:`${location.origin}${routes[tab]}`,description,applicationCategory:'TravelApplication',operatingSystem:'Any',offers:{'@type':'Offer',price:'0',priceCurrency:'USD'},areaServed:{'@type':'Place',name:'Finger Lakes, New York'}})}
 
 function App(){
  const [tab,setTab]=useState(routeToTab); const [selected,setSelected]=useState(null); const [trip,setTrip]=useState(()=>JSON.parse(localStorage.getItem('onesip-trip')||'[1,3]')); const [ratings,setRatings]=useState({}); const [toast,setToast]=useState('');
  const [session,setSession]=useState(null); const [authOpen,setAuthOpen]=useState(false); const [authMode,setAuthMode]=useState('signin');
+ const [directory,setDirectory]=useState(staticWineries);
  useEffect(()=>localStorage.setItem('onesip-trip',JSON.stringify(trip)),[trip]);
  useEffect(()=>{if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{})},[]);
  useEffect(()=>{if(!supabase)return;supabase.auth.getSession().then(({data})=>setSession(data.session));const {data:{subscription}}=supabase.auth.onAuthStateChange((event,nextSession)=>{setSession(nextSession);if(event==='PASSWORD_RECOVERY'){setAuthMode('update');setAuthOpen(true)}});return()=>subscription.unsubscribe()},[]);
  useEffect(()=>{if(!supabase||!session){setRatings({});return}let current=true;supabase.from('ratings').select('winery_ref,wine_ref,score').eq('user_id',session.user.id).then(({data,error})=>{if(!current||error)return;setRatings(Object.fromEntries(data.map(r=>[`${r.winery_ref}-${r.wine_ref}`,r.score]))) });return()=>{current=false}},[session?.user?.id]);
+ useEffect(()=>{if(!supabase)return;let current=true;supabase.from('tasting_menus').select('id,name,status,tasting_price_label,valid_from,valid_until,notes,winery:wineries(directory_ref,name,city),menu_items(*)').eq('status','published').then(({data,error})=>{if(!current||error||!data?.length)return;const next=staticWineries.map(winery=>{const live=data.find(menu=>String(menu.winery?.directory_ref)===String(winery.id));if(!live)return winery;const items=(live.menu_items||[]).filter(item=>item.in_stock).sort((a,b)=>a.sort_order-b.sort_order);return{...winery,tags:[winery.lake.replace(' Lake',''),'Live menu',winery.city],verification:'Winery-published tasting menu',flightPrice:live.tasting_price_label||null,menuNotice:[live.notes,live.valid_until&&`Available through ${live.valid_until}.`].filter(Boolean).join(' '),wines:items.map(item=>[[item.vintage,item.wine_name].filter(Boolean).join(' '),[item.varietal,item.style].filter(Boolean).join(' · ')||'Wine',item.bottle_price?`$${Number(item.bottle_price).toFixed(2)}`:'Ask winery',item.flight_name||live.name,item.description||'',item.award||'',item.purchase_url||''])}});wineries=next;setDirectory(next)});return()=>{current=false}},[]);
  useEffect(()=>{setMeta(tab);const back=()=>setTab(routeToTab());addEventListener('popstate',back);return()=>removeEventListener('popstate',back)},[tab]);
  const rated=Object.values(ratings).length; const favorites=useMemo(()=>Object.entries(ratings).filter(([,v])=>v>=4),[ratings]);
  const flash=t=>{setToast(t);setTimeout(()=>setToast(''),1800)};
@@ -43,18 +50,21 @@ function App(){
  const accountName=session?.user?.user_metadata?.display_name||session?.user?.email?.split('@')[0]||'Member';
  const initials=accountName.split(/\s+/).map(x=>x[0]).join('').slice(0,2).toUpperCase()||'S';
  const openAccount=()=>{if(session)go('profile');else{setAuthMode('signin');setAuthOpen(true)}};
+ const openAuth=mode=>{setAuthMode(mode||'signin');setAuthOpen(true)};
  const chooseRegion=e=>{const region=regions.find(r=>r.name===e.target.value);flash(region.active?'Finger Lakes selected':`${region.name} is coming soon`)};
  return <div className="shell">
   <header><button className="brand" onClick={()=>go('discover')} aria-label="Sips Wine Tasting Journey home"><span>S</span><b>SIPS <i>WINE TASTING JOURNEY</i></b></button><label className="regionSelect"><MapPin size={15}/><select value="Finger Lakes" onChange={chooseRegion} aria-label="Choose a wine region">{regions.map(r=><option key={r.name} value={r.name}>{r.name}{r.active?'':' — Coming soon'}</option>)}</select><ChevronRight size={14}/></label><button className="avatar" onClick={openAccount} aria-label={session?'Open your wine journal':'Sign in or create an account'}>{session?initials:'JOIN'}</button></header>
   <main>
-   {tab==='discover'&&<Discover onOpen={setSelected} trip={trip} addTrip={addTrip} flash={flash}/>}
-   {tab==='trip'&&<Trip trip={trip} ratings={ratings} onOpen={setSelected} flash={flash}/>}
-   {tab==='taste'&&<Taste wineries={wineries} ratings={ratings} saveRating={saveRating}/>}
+   {tab==='discover'&&<Discover wineries={directory} onOpen={setSelected} trip={trip} addTrip={addTrip} flash={flash}/>}
+   {tab==='trip'&&<Trip wineries={directory} trip={trip} ratings={ratings} onOpen={setSelected} flash={flash}/>}
+   {tab==='taste'&&<Taste wineries={directory} ratings={ratings} saveRating={saveRating}/>}
    {tab==='friends'&&<Friends ratings={ratings}/>} 
    {tab==='profile'&&<Profile rated={rated} favorites={favorites} session={session} openAuth={()=>{setAuthMode('signin');setAuthOpen(true)}}/>}
+   {tab==='wineryLogin'&&<WineryPortal session={session} openAuth={openAuth} go={go} flash={flash} directory={directory}/>}
+   {tab==='wineryAdmin'&&<WineryDashboard session={session} openAuth={openAuth} go={go} flash={flash}/>}
   </main>
-  <nav aria-label="Primary navigation">{[['discover',Map,'Explore'],['trip',Route,'Trip'],['taste',Wine,'Taste'],['friends',Users,'Friends'],['profile',UserRound,'You']].map(([id,I,label])=><button key={id} className={tab===id?'active':''} onClick={()=>go(id)} aria-current={tab===id?'page':undefined}><I size={21}/><span>{label}</span></button>)}</nav>
-  {selected&&<Winery winery={selected} inTrip={trip.includes(selected.id)} addTrip={addTrip} ratings={ratings} saveRating={saveRating} close={()=>setSelected(null)}/>}
+  {!['wineryLogin','wineryAdmin'].includes(tab)&&<nav aria-label="Primary navigation">{[['discover',Map,'Explore'],['trip',Route,'Trip'],['taste',Wine,'Taste'],['friends',Users,'Friends'],['profile',UserRound,'You']].map(([id,I,label])=><button key={id} className={tab===id?'active':''} onClick={()=>go(id)} aria-current={tab===id?'page':undefined}><I size={21}/><span>{label}</span></button>)}</nav>}
+  {selected&&<Winery winery={selected} inTrip={trip.includes(selected.id)} addTrip={addTrip} ratings={ratings} saveRating={saveRating} go={go} close={()=>setSelected(null)}/>}
   {authOpen&&<AuthModal mode={authMode} setMode={setAuthMode} close={()=>setAuthOpen(false)} onSuccess={message=>{setAuthOpen(false);flash(message)}}/>}
   <InstallPrompt/>
   {toast&&<div className="toast"><Check size={18}/>{toast}</div>}
@@ -72,7 +82,7 @@ function Discover({onOpen,trip,addTrip,flash}){const [query,setQuery]=useState('
  <div className="lakeFilters" aria-label="Filter wineries by lake">{['All lakes',...lakes].map(x=><button className={lake===x?'active':''} onClick={()=>setLake(x)} key={x}>{x}</button>)}</div>
  <div className="mapCard"><FingerLakesMap activeLake={lake}/>{shown.map(w=><button key={w.id} aria-label={`Open ${w.name}`} className="pin directoryPin" style={{left:w.x+'%',top:w.y+'%',background:w.color}} onClick={()=>onOpen(w)}><Wine size={12}/></button>)}<div className="mapHint"><Navigation size={15}/> {shown.length} wineries shown</div><div className="mapCredit">Sips illustrated map · based on your Finger Lakes reference</div></div></section>
  <section className="section"><div className="titleRow directoryHeading"><div><small>POPULAR PLACES TO START</small><h2>Explore by location</h2><p>Curated discovery order now; community popularity will take over as Sips ratings grow.</p></div><span className="resultCount">{shown.length} results</span></div>{locationGroups.map(group=><div className="locationGroup" key={group.name}><div className="locationTitle"><div><small>WINE TRAIL</small><h2>{group.name}</h2></div><span>{group.items.length} wineries</span></div><div className="cards">{group.items.map(w=><article className="wineryCard" key={w.id} onClick={()=>onOpen(w)}><div className="cardTop"><span style={{background:w.color}}><Wine size={20}/></span><button aria-label={trip.includes(w.id)?`Remove ${w.name} from trip`:`Add ${w.name} to trip`} onClick={e=>{e.stopPropagation();addTrip(w.id)}} className={trip.includes(w.id)?'saved':''}>{trip.includes(w.id)?<Check/>:<Plus/>}</button></div><small>{w.city} · {w.lake}</small><h3>{w.name}</h3><div className="tags">{w.tags.map(x=><i key={x}>{x}</i>)}</div><div className="cardFoot"><b className="verifyDot">●</b><span>{w.verification}</span><ChevronRight/></div></article>)}</div></div>)}</section>
- <section className="directorySource"><small>DIRECTORY SOURCE</small><p>Listings are seeded from the New York State winery-license directory. A license record does not guarantee a public tasting room; hours and visitor details are marked pending until verified.</p><a href="https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth" target="_blank" rel="noreferrer">View the source</a></section>
+ <section className="directorySource"><small>DIRECTORY SOURCE</small><p>Listings are seeded from the New York State winery-license directory. A license record does not guarantee a public tasting room; hours and visitor details are marked pending until verified.</p><a href="https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth" target="_blank" rel="noreferrer">View the source</a><a className="claimListing" href="/winery-login">Own a winery? Claim your listing</a></section>
  <section className="deal"><Tag/><div><small>ONE SIP OFFER</small><h3>A bottle you loved, waiting at home.</h3><p>Rate a wine 5 and we’ll save it for future winery offers.</p></div><button>See how</button></section>
  </>}
 

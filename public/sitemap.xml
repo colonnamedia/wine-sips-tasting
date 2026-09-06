@@ -5,4 +5,5 @@
   <url><loc>https://wine-sips-tasting.vercel.app/wine-tasting</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wine-sips-tasting.vercel.app/shared-tastings</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wine-sips-tasting.vercel.app/my-wine-journal</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://wine-sips-tasting.vercel.app/winery-login</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
