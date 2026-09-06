@@ -1,6 +1,6 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import {Map, Route, Wine, Users, UserRound, Search, Plus, MapPin, Clock, Heart, ChevronRight, X, Check, Sparkles, Navigation, Share2, Store, Tag} from 'lucide-react';
+import {Map, Route, Wine, Users, UserRound, Search, Plus, MapPin, Heart, ChevronRight, X, Check, Sparkles, Navigation, Share2, Store, Tag, Download, Smartphone, MoreVertical, Share} from 'lucide-react';
 import './styles.css';
 
 const wineries=[
@@ -10,15 +10,28 @@ const wineries=[
  {id:4,name:'Cayuga Shore Wines',lake:'Cayuga Lake',area:'West Shore',distance:'42 min',score:4.6,ratings:287,tags:['Sparkling','Picnic'],x:77,y:45,color:'#2e6073',desc:'Bright sparkling wines, lawns by the vines, and an unhurried pace.',wines:[['2022 Traditional Sparkling','Sparkling','$39'],['2025 Pinot Gris','White','$25'],['2024 Cabernet Franc Rosé','Rosé','$27']]}
 ];
 const scale=[['Liked it','Nice sip'],['A glass','I’d order it'],['A bottle','Take one home'],['Multiple','Stock me up'],['Anytime','Ship it home']];
+const routes={discover:'/',trip:'/trip-planner',taste:'/wine-tasting',friends:'/shared-tastings',profile:'/my-wine-journal'};
+const seo={
+ discover:['Explore Finger Lakes Wineries | One Sip','Discover Finger Lakes wineries on an interactive map, compare tasting experiences, and find wines worth adding to your trip.'],
+ trip:['Finger Lakes Wine Trip Planner | One Sip','Build a Finger Lakes winery itinerary, organize stops, and share your wine trip with friends.'],
+ taste:['Rate a Finger Lakes Wine Tasting | One Sip','Rate every wine with One Sip’s practical five-level scale and save the bottles you want to buy again.'],
+ friends:['Shared Wine Tastings With Friends | One Sip','Compare wine ratings with friends, find group favorites, and create a shareable Finger Lakes trip recap.'],
+ profile:['Your Wine Journal & Tasting History | One Sip','Save wines, wineries, tasting notes, past routes, and personalized Finger Lakes wine recommendations.']
+};
+function routeToTab(){const p=location.pathname;return Object.entries(routes).find(([,v])=>v===p)?.[0]||'discover'}
+function setMeta(tab){const [title,description]=seo[tab];document.title=title;document.querySelector('meta[name="description"]')?.setAttribute('content',description);document.querySelector('meta[property="og:title"]')?.setAttribute('content',title);document.querySelector('meta[property="og:description"]')?.setAttribute('content',description);let c=document.querySelector('link[rel="canonical"]');if(c)c.href=`${location.origin}${routes[tab]}`;let schema=document.getElementById('page-schema');if(!schema){schema=document.createElement('script');schema.type='application/ld+json';schema.id='page-schema';document.head.appendChild(schema)}schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'WebApplication',name:'One Sip',url:`${location.origin}${routes[tab]}`,description,applicationCategory:'TravelApplication',operatingSystem:'Any',offers:{'@type':'Offer',price:'0',priceCurrency:'USD'},areaServed:{'@type':'Place',name:'Finger Lakes, New York'}})}
 
 function App(){
- const [tab,setTab]=useState('discover'); const [selected,setSelected]=useState(null); const [trip,setTrip]=useState(()=>JSON.parse(localStorage.getItem('onesip-trip')||'[1,3]')); const [ratings,setRatings]=useState(()=>JSON.parse(localStorage.getItem('onesip-ratings')||'{}')); const [toast,setToast]=useState('');
+ const [tab,setTab]=useState(routeToTab); const [selected,setSelected]=useState(null); const [trip,setTrip]=useState(()=>JSON.parse(localStorage.getItem('onesip-trip')||'[1,3]')); const [ratings,setRatings]=useState(()=>JSON.parse(localStorage.getItem('onesip-ratings')||'{}')); const [toast,setToast]=useState('');
  useEffect(()=>localStorage.setItem('onesip-trip',JSON.stringify(trip)),[trip]); useEffect(()=>localStorage.setItem('onesip-ratings',JSON.stringify(ratings)),[ratings]);
+ useEffect(()=>{if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{})},[]);
+ useEffect(()=>{setMeta(tab);const back=()=>setTab(routeToTab());addEventListener('popstate',back);return()=>removeEventListener('popstate',back)},[tab]);
  const rated=Object.values(ratings).length; const favorites=useMemo(()=>Object.entries(ratings).filter(([,v])=>v>=4),[ratings]);
  const flash=t=>{setToast(t);setTimeout(()=>setToast(''),1800)};
  const addTrip=id=>{setTrip(v=>v.includes(id)?v.filter(x=>x!==id):[...v,id]);flash(trip.includes(id)?'Removed from trip':'Added to your route')};
+ const go=id=>{setTab(id);history.pushState({},'',routes[id]);scrollTo({top:0,behavior:'smooth'})};
  return <div className="shell">
-  <header><button className="brand" onClick={()=>setTab('discover')}><span>1</span><b>ONE SIP</b></button><div className="region"><MapPin size={15}/> Finger Lakes, NY</div><button className="avatar">AC</button></header>
+  <header><button className="brand" onClick={()=>go('discover')} aria-label="One Sip home"><span>1</span><b>ONE SIP</b></button><div className="region"><MapPin size={15}/> Finger Lakes, NY</div><button className="avatar" onClick={()=>go('profile')} aria-label="Open your wine journal">AC</button></header>
   <main>
    {tab==='discover'&&<Discover onOpen={setSelected} trip={trip} addTrip={addTrip}/>} 
    {tab==='trip'&&<Trip trip={trip} ratings={ratings} onOpen={setSelected}/>} 
@@ -26,11 +39,14 @@ function App(){
    {tab==='friends'&&<Friends ratings={ratings}/>} 
    {tab==='profile'&&<Profile rated={rated} favorites={favorites}/>} 
   </main>
-  <nav>{[['discover',Map,'Explore'],['trip',Route,'Trip'],['taste',Wine,'Taste'],['friends',Users,'Friends'],['profile',UserRound,'You']].map(([id,I,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}><I size={21}/><span>{label}</span></button>)}</nav>
+  <nav aria-label="Primary navigation">{[['discover',Map,'Explore'],['trip',Route,'Trip'],['taste',Wine,'Taste'],['friends',Users,'Friends'],['profile',UserRound,'You']].map(([id,I,label])=><button key={id} className={tab===id?'active':''} onClick={()=>go(id)} aria-current={tab===id?'page':undefined}><I size={21}/><span>{label}</span></button>)}</nav>
   {selected&&<Winery winery={selected} inTrip={trip.includes(selected.id)} addTrip={addTrip} ratings={ratings} setRatings={setRatings} close={()=>setSelected(null)} flash={flash}/>} 
+  <InstallPrompt/>
   {toast&&<div className="toast"><Check size={18}/>{toast}</div>}
  </div>
 }
+
+function InstallPrompt(){const [show,setShow]=useState(false);const [deferred,setDeferred]=useState(null);const [ios,setIos]=useState(false);useEffect(()=>{if(localStorage.getItem('onesip-install-dismissed')||matchMedia('(display-mode: standalone)').matches)return;const isIos=/iphone|ipad|ipod/i.test(navigator.userAgent);setIos(isIos);const timer=setTimeout(()=>setShow(true),3500);const ready=e=>{e.preventDefault();setDeferred(e)};addEventListener('beforeinstallprompt',ready);return()=>{clearTimeout(timer);removeEventListener('beforeinstallprompt',ready)}},[]);const close=()=>{setShow(false);localStorage.setItem('onesip-install-dismissed','1')};const install=async()=>{if(deferred){await deferred.prompt();setShow(false)}else setIos(true)};if(!show)return null;return <div className="installBackdrop"><aside className="installCard" role="dialog" aria-modal="true" aria-labelledby="install-title"><button className="installClose" onClick={close} aria-label="Close"><X/></button><div className="appIcon">1</div><small>KEEP ONE SIP HANDY</small><h2 id="install-title">Save it to your Home Screen</h2><p>Open your trips and rate wines like an app—no App Store needed.</p>{ios?<div className="iosSteps"><span><Share size={18}/> Tap <b>Share</b> in Safari</span><span><Plus size={18}/> Choose <b>Add to Home Screen</b></span></div>:<button className="installButton" onClick={install}><Download size={18}/> Save One Sip</button>}<button className="later" onClick={close}>Maybe later</button></aside></div>}
 
 function Discover({onOpen,trip,addTrip}){const [query,setQuery]=useState('');const shown=wineries.filter(w=>(w.name+w.lake+w.tags.join('')).toLowerCase().includes(query.toLowerCase()));return <>
  <section className="hero"><img src="/finger-lakes-tasting.jpg"/><div className="heroShade"/><div className="heroCopy"><small>YOUR NEXT POUR</small><h1>Find the wines<br/>worth remembering.</h1><p>Plan together. Taste everything. Keep what you love.</p></div><div className="search"><Search size={19}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Winery, lake, or wine"/></div></section>
