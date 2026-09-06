@@ -4,3 +4,7 @@ dist/
 .env*
 !.env.example
 .DS_Store
+trip-planner/
+wine-tasting/
+shared-tastings/
+my-wine-journal/
