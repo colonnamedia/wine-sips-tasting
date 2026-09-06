@@ -1,0 +1,33 @@
+header .region{border:0;background:none;color:var(--ink);cursor:pointer}
+.regionSelect{display:flex;align-items:center;gap:5px;color:var(--ink);border:1px solid #d8cdd0;background:#fffaf5;border-radius:20px;padding:7px 9px 7px 11px}
+.regionSelect select{appearance:none;border:0;background:transparent;color:var(--ink);font-size:13px;font-weight:700;outline:0;cursor:pointer;max-width:160px}
+.regionIntro{display:grid;grid-template-columns:1fr 1.25fr;gap:34px;align-items:center;background:#ece4da}
+.regionIntro h2{font:600 clamp(2rem,4vw,3.1rem)/1.04 'Playfair Display';margin:8px 0 14px}
+.regionIntro p{color:#74636a;line-height:1.6;max-width:500px}
+.regionMiniGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.regionMiniGrid button{border:1px solid #d5c8c9;background:#f8f4ef;border-radius:17px;padding:17px 12px;text-align:left;color:var(--ink);min-width:0}
+.regionMiniGrid button.active{background:#2d5b62;color:#fff;border-color:#2d5b62}
+.regionMiniGrid button>span{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#fff;color:var(--wine);margin-bottom:20px}
+.regionMiniGrid button div{display:flex;flex-direction:column;gap:3px}
+.regionMiniGrid button small{font-size:9px;opacity:.72}
+.regionMiniGrid button strong{font:600 18px/1.05 'Playfair Display';overflow-wrap:anywhere}
+.regionMiniGrid button em{font-size:10px;font-style:normal;margin-top:5px;color:#98713f;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.regionMiniGrid button.active em{color:#dceceb}
+.regionBackdrop{position:fixed;inset:0;z-index:95;background:#160c11b8;display:grid;place-items:center;padding:18px}
+.regionPicker{width:min(690px,100%);max-height:calc(100vh - 36px);overflow:auto;position:relative;background:#fffaf4;border-radius:28px;padding:38px;box-shadow:0 24px 70px #12080d88;animation:rise .3s ease}
+.regionClose{position:absolute;right:16px;top:16px;width:38px;height:38px;border:0;border-radius:50%;background:#eee6e1;display:grid;place-items:center}
+.regionPicker>small{font-weight:700;letter-spacing:.15em;font-size:11px;color:var(--wine)}
+.regionPicker>h2{font:600 38px/1.05 'Playfair Display';margin:8px 0}
+.regionPicker>p{color:#75666b;margin:0 50px 24px 0;line-height:1.5}
+.regionChoices{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.regionChoices>button{border:1px solid #dacfd0;background:#fff;border-radius:19px;padding:20px;text-align:left;color:var(--ink)}
+.regionChoices>button.active{border:2px solid #2d5b62;background:#edf3f1;padding:19px}
+.regionChoices>button>span{display:grid;place-items:center;width:42px;height:42px;background:#6e2942;color:#fff;border-radius:14px 14px 14px 5px;margin-bottom:22px}
+.regionChoices small,.regionChoices strong,.regionChoices em{display:block}
+.regionChoices small{font-size:9px;letter-spacing:.12em;color:#88767d;text-transform:uppercase}
+.regionChoices strong{font:600 23px 'Playfair Display';margin:4px 0 9px}
+.regionChoices p{font-size:12px;line-height:1.45;color:#75666b;min-height:68px}
+.regionChoices em{font-style:normal;font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:#a16b35}
+.regionChoices button.active em{color:#2d5b62;display:flex;align-items:center;gap:5px}
+@media(max-width:760px){.regionIntro{grid-template-columns:1fr}.regionMiniGrid{grid-template-columns:repeat(3,1fr)}.regionChoices{grid-template-columns:1fr}.regionChoices p{min-height:0}.regionPicker{padding:32px 22px}.regionChoices>button{display:grid;grid-template-columns:46px 1fr;gap:14px}.regionChoices>button>span{margin:0}.regionPicker>h2{font-size:32px}}
+@media(max-width:560px){.regionSelect{padding:7px}.regionSelect select{width:22px;font-size:0}.regionSelect select option{font-size:16px}.regionSelect>svg:last-child{display:none}.regionIntro{padding-top:34px}.regionMiniGrid{display:flex;overflow:auto;margin-right:-4%;padding-right:4%}.regionMiniGrid button{min-width:145px}.regionBackdrop{align-items:end;padding:0}.regionPicker{width:100%;max-height:92vh;border-radius:28px 28px 0 0}.regionPicker>p{margin-right:20px}}
