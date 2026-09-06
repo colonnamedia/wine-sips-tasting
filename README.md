@@ -13,6 +13,8 @@ npm run dev
 
 Import this directory or its Git repository in Vercel. The included `vercel.json` supplies the single-page-app rewrite.
 
+Winery coordinates are cached in `src/data/wineries.json`. Run `node scripts/geocode-wineries.mjs` after refreshing the state-license directory to geocode addresses with the U.S. Census Geocoder.
+
 ### Supabase authentication
 
 1. In Supabase, open **SQL Editor** and run `supabase/schema.sql`.

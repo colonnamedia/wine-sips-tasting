@@ -9,12 +9,15 @@ const popularByLake={
   'Cayuga Lake':['Heart & Hands Wine Company','Constantia Wine Company','Treleaven','Long Point Winery','Bright Leaf Vineyard','Bet The Farm','Quarry Ridge Winery']
 };
 const discoveryTieBreak=name=>[...name].reduce((total,char)=>(total*31+char.charCodeAt(0))%997,0);
+const clampMapPosition=value=>Math.max(3,Math.min(97,value));
+const projectLongitude=longitude=>clampMapPosition(5+((longitude+77.75)/1.75)*90);
+const projectLatitude=latitude=>clampMapPosition(5+((43.2-latitude)/1.2)*90);
 const counts={};
 const regionalWineries=directory.map((record,index)=>{
   const position=counts[record.lake]||0;
   const curatedRank=(popularByLake[record.lake]||[]).indexOf(record.name);
   counts[record.lake]=position+1;
-  return {...record,id:index+1,area:record.city?`${record.city}, ${record.county} County`:'Finger Lakes region',distance:'Route time available soon',score:null,ratings:0,popularityRank:curatedRank<0?1000+discoveryTieBreak(record.name):curatedRank,tags:[record.lake.replace(' Lake',''),record.city||'Regional listing'],x:lakeX[record.lake]+((position%5)-2)*1.25,y:9+(position%15)*5.5,color:colors[record.lake],desc:`Listed in the New York State winery-license directory at ${record.address}. Public tasting hours and current flight details still need verification.`,wines:[]};
+  return {...record,id:index+1,area:record.city?`${record.city}, ${record.county} County`:'Finger Lakes region',distance:'Route time available soon',score:null,ratings:0,popularityRank:curatedRank<0?1000+discoveryTieBreak(record.name):curatedRank,tags:[record.lake.replace(' Lake',''),record.city||'Regional listing'],x:record.longitude?projectLongitude(record.longitude):lakeX[record.lake]+((position%5)-2)*1.25,y:record.latitude?projectLatitude(record.latitude):9+(position%15)*5.5,color:colors[record.lake],desc:`Listed in the New York State winery-license directory at ${record.address}. Public tasting hours and current flight details still need verification.`,wines:[]};
 });
 const heartAndHands=regionalWineries.find(winery=>winery.name==='Heart & Hands Wine Company');
 if(heartAndHands)Object.assign(heartAndHands,{

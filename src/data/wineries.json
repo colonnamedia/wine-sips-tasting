@@ -7,7 +7,11 @@
     "address": "14157 W Lake Rd, Pulteney, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.564932414590736,
+    "longitude": -77.14726194906223,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Airy Acres Vineyard",
@@ -17,7 +21,11 @@
     "address": "8011 Footes Corners Rd, Interlaken, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.636104068596,
+    "longitude": -76.725747194641,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Anthony Road Wine Co",
@@ -27,7 +35,11 @@
     "address": "1020 Anthony Rd, Penn Yann, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.705821464765,
+    "longitude": -76.972832541394,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Apple Barrel Orchards",
@@ -37,7 +49,11 @@
     "address": "2673 Sand Hill Rd, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.659112717852,
+    "longitude": -77.083465552716,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Atwater Vineyards",
@@ -47,7 +63,11 @@
     "address": "5055 Ny Route 414, Burdett, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.478217240808,
+    "longitude": -76.869128616364,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Azure Hill Winery",
@@ -57,7 +77,11 @@
     "address": "8716 Gallagher Road, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.498085968287,
+    "longitude": -77.182686999798,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Barnstormer Winery",
@@ -67,7 +91,11 @@
     "address": "4184 Rte 14, Rock Stream, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.435127928628,
+    "longitude": -76.907226228619,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Bc Farm Wnry & Barrington Cellars",
@@ -77,7 +105,11 @@
     "address": "2690 Gray Road, Vineyard & Barrington Cellars, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.549232643554,
+    "longitude": -77.088518949799,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Belhurst Estate Winery",
@@ -87,7 +119,11 @@
     "address": "5525 E Lake Road, Romulus, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.757114635042,
+    "longitude": -76.921108726977,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Bet The Farm",
@@ -97,7 +133,11 @@
     "address": "4204 Krums Corners Rd, Trumansburg, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.501507718339,
+    "longitude": -76.574391252613,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Billsboro Winery",
@@ -107,7 +147,11 @@
     "address": "4760 W Lake Road, Geneva, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.797996972605,
+    "longitude": -76.977762917672,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Black Diamond Farm",
@@ -117,7 +161,11 @@
     "address": "4675 Seneca Rd, Trumansburg, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.547828606107,
+    "longitude": -76.656894585383,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Bloomer Creek Vineyard",
@@ -127,7 +175,11 @@
     "address": "5301 Sr 414, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.488614068425,
+    "longitude": -76.870073677671,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Boland Thomas Vineyards,",
@@ -137,7 +189,11 @@
     "address": "3024 County Rd 138, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.682386689715,
+    "longitude": -76.764865433379,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Boundary Breaks",
@@ -147,7 +203,11 @@
     "address": "1428 Porter Covert Rd, Lodi, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.629782730132,
+    "longitude": -76.870776127816,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Bright Leaf Vineyard",
@@ -157,7 +217,11 @@
     "address": "1250 Clearview Rd, King Ferry, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.66025585398,
+    "longitude": -76.655814148642,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Bristol Valley Vineyards",
@@ -167,7 +231,11 @@
     "address": "7235 Lane Rd, Bloomfield, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.819785421646,
+    "longitude": -77.427149353589,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Canandaigua Wine Company",
@@ -177,7 +245,11 @@
     "address": "116 Buffalo St, Canandaigua, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.896462212045,
+    "longitude": -77.293805712387,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Castel Grisch",
@@ -187,7 +259,11 @@
     "address": "3380 County Rte 28, Watkins Glen, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.396456834988,
+    "longitude": -76.904681230797,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Catharine Valley",
@@ -197,7 +273,11 @@
     "address": "4201 State Route 414, T/O Hector, Burdett, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.436747202335,
+    "longitude": -76.863350045686,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Caywood Vineyards",
@@ -207,7 +287,11 @@
     "address": "9666 Route 414, Lodi, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.5870427922175,
+    "longitude": -76.86120130670174,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Chateau Dusseau",
@@ -217,7 +301,11 @@
     "address": "5292 Erron Hill Rd, Locke, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.66469749383,
+    "longitude": -76.3872202211,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Chateau Frank",
@@ -227,7 +315,11 @@
     "address": "9683 Middle Road, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.470810467022,
+    "longitude": -77.184095483534,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Chateau Lafayette Reneau",
@@ -237,7 +329,11 @@
     "address": "5081 State Rte 414, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.50410601478755,
+    "longitude": -76.87336203905117,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Chateau Renaissance",
@@ -247,7 +343,11 @@
     "address": "7494 Fish Hatchery Rd, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.462593488101724,
+    "longitude": -77.18617572565672,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Cjs Vineyards",
@@ -257,7 +357,11 @@
     "address": "6900 Fosterville Rd, Auburn, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.952183645683,
+    "longitude": -76.670980684715,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Colloca Estate Winery",
@@ -267,7 +371,11 @@
     "address": "14678 W Bay Rd, Sterling, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 43.327931929488,
+    "longitude": -76.721166054064,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Constantia Wine Company",
@@ -277,7 +385,11 @@
     "address": "3262 Long Hill Rd, Scipio Center, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.739236474456,
+    "longitude": -76.525257465482,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Cool Climate Wine Group, The",
@@ -287,7 +399,11 @@
     "address": "491 State Rte 54, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.68594271324316,
+    "longitude": -76.993037206037,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Damiani Wine Cellars",
@@ -297,7 +413,11 @@
     "address": "5281 Peach Orchard Rd, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.495382634442,
+    "longitude": -76.879767661005,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Deep Root Vineyard",
@@ -307,7 +427,11 @@
     "address": "10391 Cross St, Roff Hill Rd & Gallagher, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.50650146727,
+    "longitude": -77.164103733078,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Divided Sky Vineyard",
@@ -317,7 +441,11 @@
     "address": "9570 Middle Rd, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.460675044334,
+    "longitude": -77.189793612065,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Domaine Leseurre",
@@ -327,7 +455,11 @@
     "address": "13920 State Rte 54, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.484762216544,
+    "longitude": -77.139119203278,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Drink This",
@@ -337,7 +469,11 @@
     "address": "10304 County Rte 76, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.491033745064,
+    "longitude": -77.187225912661,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Element Winery, The",
@@ -347,7 +483,11 @@
     "address": "27 West Ave, Arkport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.394549512064,
+    "longitude": -77.699392631586,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Firelane 6 Winery",
@@ -357,7 +497,11 @@
     "address": "2960 State Route 38, Moravia, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.761232436073,
+    "longitude": -76.48015378257,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Flatt Rock",
@@ -367,7 +511,11 @@
     "address": "5835 Spirawk Rd, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.521001213472,
+    "longitude": -76.878943438371,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Forge Cellars",
@@ -377,7 +525,11 @@
     "address": "3775 Mathews Rd, Burdett, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.481549198936,
+    "longitude": -76.85976942992,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Fox Run",
@@ -387,7 +539,11 @@
     "address": "670 Route 14, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.731845367431,
+    "longitude": -76.97175714794,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Frontenac Point Vineyard",
@@ -397,7 +553,11 @@
     "address": "9501 Route 89, Trumansburg, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.565340979983,
+    "longitude": -76.649728614837,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Fulkerson Wine Cellars",
@@ -407,7 +567,11 @@
     "address": "5576 Route 14, Dundee, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.493672721212,
+    "longitude": -76.924016859202,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Ghost Light Cellars",
@@ -417,7 +581,11 @@
     "address": "4024 State Route 14, Watkins Glen, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.396456834988,
+    "longitude": -76.904681230797,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Giancarelli Brothers Winery",
@@ -427,7 +595,11 @@
     "address": "10252 Shortcut Rd, Weedsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 43.112949273831,
+    "longitude": -76.535038520285,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Glenhaven Farm",
@@ -437,7 +609,11 @@
     "address": "6121 Sirrine Road, Trumansburg, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.504865284452,
+    "longitude": -76.709852755985,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Glenora Wine Cellars",
@@ -447,7 +623,11 @@
     "address": "5435 Rte 14, Dundee, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.499487679798,
+    "longitude": -76.924182068356,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Goose Watch Winery",
@@ -457,7 +637,11 @@
     "address": "5480 Route 89, Romulus, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.759484664041,
+    "longitude": -76.770406177462,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Gotham Winery",
@@ -467,7 +651,11 @@
     "address": "4021 Italy Hill Rd, Branchport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.598464031271,
+    "longitude": -77.173534579514,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Hazlitts 1852 Vineyards",
@@ -477,7 +665,11 @@
     "address": "5712 Rte 414, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.510093639105,
+    "longitude": -76.8765915743,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Heart & Hands Wine Company",
@@ -487,7 +679,11 @@
     "address": "4162 State Route 90n, Farleys Point Rd & Carrs Cove, Union Springs, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.819816373702,
+    "longitude": -76.699191661073,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Hermann J. Wiemer Vineyard",
@@ -497,7 +693,11 @@
     "address": "3962 Route 14, Dundee, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.573404990472,
+    "longitude": -76.927753183871,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Heron Hill Winery",
@@ -507,7 +707,11 @@
     "address": "9301 County Rte 76, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.451285112095,
+    "longitude": -77.198142865058,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Hickory Hollow Wine Cellars, Nathan K, Chepika",
@@ -517,7 +721,11 @@
     "address": "20 Hollister St, Unit 3, Dundee, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.522499167479,
+    "longitude": -76.973827523859,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Highland Cellars",
@@ -527,7 +735,11 @@
     "address": "1556 Altay Road, Rock Stream, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.43916179684,
+    "longitude": -77.007441677556,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Hillick & Hobbs Estate",
@@ -537,7 +749,11 @@
     "address": "7448 County Rd 153, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.663407666949,
+    "longitude": -76.700593934888,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Hosmer",
@@ -547,7 +763,11 @@
     "address": "6999 Route 89, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.684886307203,
+    "longitude": -76.744877355483,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Hunt Country Vineyards",
@@ -557,7 +777,11 @@
     "address": "4021 Italy Hill Rd, Branchport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.598464031271,
+    "longitude": -77.173534579514,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Inspire Moore Winery & Vineyard",
@@ -567,7 +791,11 @@
     "address": "197 N Main St, Naples, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.625516490338,
+    "longitude": -77.395260632809,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Izzos White Barn Winery",
@@ -577,7 +805,11 @@
     "address": "6634 Cayuga Road, Rt 20 To North & Genesee To So, Cayuga, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.938764269958,
+    "longitude": -76.705871199427,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "J R Dill Winery",
@@ -587,7 +819,11 @@
     "address": "4922 State Route 414, Burdett, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.472302197263,
+    "longitude": -76.867730333403,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Kelloggsville Farm Winery",
@@ -597,7 +833,11 @@
     "address": "3453 White Rd, Moravia, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.785078967083,
+    "longitude": -76.366301437677,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Kemmeter Wines",
@@ -607,7 +847,11 @@
     "address": "1030 Larzelere Rd, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.705748548565,
+    "longitude": -76.977691297869,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Kettle Ridge Farm",
@@ -617,7 +861,11 @@
     "address": "515 Log Cabin Rd, Victor, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 43.013725876284,
+    "longitude": -77.464841241663,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Keuka Lake Vineyards",
@@ -627,7 +875,11 @@
     "address": "8872 8882 County Route 76, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.430731498913,
+    "longitude": -77.201411332201,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Keuka Spring Vineyards",
@@ -637,7 +889,11 @@
     "address": "243 Route 54 East Lake Rd, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.643582143242,
+    "longitude": -77.066546649809,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Knapp Farms",
@@ -647,7 +903,11 @@
     "address": "2770 Ernsberger Road, T/O Varick, Romulus, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.765679688472,
+    "longitude": -76.781804519771,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Konstantin D. Frank &Sons Vinifera Wine Cellars",
@@ -657,7 +917,11 @@
     "address": "9749 Middle Road, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.47338147882,
+    "longitude": -77.183357915027,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "L & D Acquisition",
@@ -667,7 +931,11 @@
     "address": "1 Lake Niagara Lane, Naples, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.668710062614,
+    "longitude": -77.3808852131695,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Lacey Magruder Vineyard & Winery",
@@ -677,7 +945,11 @@
     "address": "462 Armstrong Rd, Geneva, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.801272606314,
+    "longitude": -76.99216716734,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Lakeshore Winery",
@@ -687,7 +959,11 @@
     "address": "5132 Route 89, Romulus, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.775646714558,
+    "longitude": -76.769652820746,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Lakewood Vineyards",
@@ -697,7 +973,11 @@
     "address": "4024 State Route 14, Watkins Glen, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.396456834988,
+    "longitude": -76.904681230797,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Lamoreaux Landing Wine",
@@ -707,7 +987,11 @@
     "address": "9224 Route 414, Lodi, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.5870427922175,
+    "longitude": -76.86120130670174,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Leidenfrost Vineyards",
@@ -717,7 +1001,11 @@
     "address": "5677 Route 414, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.508512265692,
+    "longitude": -76.876601877836,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Living Roots Wine & Company",
@@ -727,7 +1015,11 @@
     "address": "8560 County Rte 87, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.407476767249,
+    "longitude": -77.191212310183,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Long Point Winery",
@@ -737,7 +1029,11 @@
     "address": "1485 Lake Road, Aurora, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.710719013768,
+    "longitude": -76.686742930622,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Lucas Winery",
@@ -747,7 +1043,11 @@
     "address": "3862 County Road 150, Interlaken, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.628835060462,
+    "longitude": -76.711055256244,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Magnus Ridge Winery",
@@ -757,7 +1057,11 @@
     "address": "5900 State Route 14, Rock Stream, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.475389641196,
+    "longitude": -76.922355481508,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Maivino",
@@ -767,7 +1071,11 @@
     "address": "815 Taber St, Ithaca, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.438444922254,
+    "longitude": -76.513723748832,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Mcgregor Vineyard",
@@ -777,7 +1085,11 @@
     "address": "5503 Dutch Street, Dundee, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.529611097196,
+    "longitude": -76.93345378536884,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Miles Wine Cellars",
@@ -787,7 +1099,11 @@
     "address": "168 Randall Crossing Road, Himrod, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.616213835085,
+    "longitude": -76.945782781631,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Missick Cellars",
@@ -797,7 +1113,11 @@
     "address": "150 Poplar Point Rd, Dundee, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.564428855801,
+    "longitude": -76.921389863075,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Montezuma Winery",
@@ -807,7 +1127,11 @@
     "address": "2981 Auburn Rd, Seneca Falls, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.58138859809774,
+    "longitude": -76.85026666091221,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Muranda Cheese Co",
@@ -817,7 +1141,11 @@
     "address": "3075 Rte 96 S, Buildings 1 & 2, Waterloo, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.876177744123,
+    "longitude": -76.854045686487,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Naples Valley Wine Cellars",
@@ -827,7 +1155,11 @@
     "address": "6259 Hawks Rd, Naples, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.71190363489,
+    "longitude": -77.36650979353,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Nine-Four Wines",
@@ -837,7 +1169,11 @@
     "address": "5281 Peach Orchard Rd, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.495382634442,
+    "longitude": -76.879767661005,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Olfactory Farm",
@@ -847,7 +1183,11 @@
     "address": "12973 Upton Rd, Red Creek, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 43.244720543691,
+    "longitude": -76.699931739862,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Once Finger Lakes",
@@ -857,7 +1197,11 @@
     "address": "655 Ny-14, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.732868053327,
+    "longitude": -76.971842271741,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Osmote Wine",
@@ -867,7 +1211,11 @@
     "address": "6677 State Rte 96a, Suite C, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.700875911185,
+    "longitude": -76.8767035003,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Pantomime Mixtures",
@@ -877,7 +1225,11 @@
     "address": "3839 Ball Diamond Rd, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.513185685687,
+    "longitude": -76.857110781613,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Plane'S Cayuga Vineyard",
@@ -887,7 +1239,11 @@
     "address": "6800 State Route 89, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.68924486573222,
+    "longitude": -76.768858902923,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Pleasant Valley Wine Co",
@@ -897,7 +1253,11 @@
     "address": "8260 Pleasant Valley Rd, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.400648371813,
+    "longitude": -77.254146465784,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Point Of The Bluff Vineyard",
@@ -907,7 +1267,11 @@
     "address": "10304 County Rte 76, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.491033745064,
+    "longitude": -77.187225912661,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Poplar Ridge Vineyards",
@@ -917,7 +1281,11 @@
     "address": "9782 Route 414, Valois, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.55030687901,
+    "longitude": -76.86941442451,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Ports Of New York",
@@ -927,7 +1295,11 @@
     "address": "815 Taber St, Ithaca, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.438444922254,
+    "longitude": -76.513723748832,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Prejean",
@@ -937,7 +1309,11 @@
     "address": "561 Leach Rd, Aka 2634 Route 14, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.636989509281,
+    "longitude": -76.943919512026,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Quarry Ridge Winery",
@@ -947,7 +1323,11 @@
     "address": "4242 State Rte 90, Union Springs, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.824588126936,
+    "longitude": -76.69801634613,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Randolph O'Neill Vineyard",
@@ -957,7 +1337,11 @@
     "address": "6965 Rte 89, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.68847376896,
+    "longitude": -76.745097086666,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Rasta Ranch Vineyards",
@@ -967,7 +1351,11 @@
     "address": "5882 Route 414, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.518638308813,
+    "longitude": -76.873457350037,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Ravines Wine Cellars",
@@ -977,7 +1365,11 @@
     "address": "400 Barracks Rd, Geneva, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.844212751547,
+    "longitude": -77.001112541183,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Raymor Estate Cellars",
@@ -987,7 +1379,11 @@
     "address": "3263 Wheeler Station Rd, Bloomfield, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.868955153404,
+    "longitude": -77.380091959254,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Red Newt Cellars",
@@ -997,7 +1393,11 @@
     "address": "3675 Tichenor Rd, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.500888227905,
+    "longitude": -76.868058992505,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Red Tail Ridge Winery",
@@ -1007,7 +1407,11 @@
     "address": "846 St Rte 14, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.721893202992,
+    "longitude": -76.973446953886,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Rock Stream Vineyards",
@@ -1017,7 +1421,11 @@
     "address": "378 Allen Road, Rock Stream, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.480471814923,
+    "longitude": -76.94176519808,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Ryan William Vineyard",
@@ -1027,7 +1435,11 @@
     "address": "5247 State Route 414, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.486700610613,
+    "longitude": -76.870356402632,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Savor Vineyards & Wines",
@@ -1037,7 +1449,11 @@
     "address": "8437 Oak Hill Rd, Arkport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.411319583463,
+    "longitude": -77.68802710314,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Scout Vineyards",
@@ -1047,7 +1463,11 @@
     "address": "468 State Rte 14, Unit B, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.741849313888,
+    "longitude": -76.97293795045,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Seneca Shore Wine Cellars",
@@ -1057,7 +1477,11 @@
     "address": "929 Davy Rd, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.715620593537,
+    "longitude": -76.971771053647,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Serenity Vineyards",
@@ -1067,7 +1491,11 @@
     "address": "930 Davy Road, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.715731615121,
+    "longitude": -76.971887335809,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Shalestone Vineyards",
@@ -1077,7 +1505,11 @@
     "address": "9681 Rte 414, Lodi, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.558914778526,
+    "longitude": -76.864455297374,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Shaw Vineyard",
@@ -1087,7 +1519,11 @@
     "address": "3901 State Route 14 Unit 2, Himrod, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.616213835085,
+    "longitude": -76.945782781631,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Sheldrake Point Vineyard & Winery",
@@ -1097,7 +1533,11 @@
     "address": "7448 County Rd 153, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.663407666949,
+    "longitude": -76.700593934888,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Shepherdess Cellars",
@@ -1107,7 +1547,11 @@
     "address": "8189 Ny Route 89, Interlaken, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.626303769677,
+    "longitude": -76.7023734628,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Silver Springs Winery",
@@ -1117,7 +1561,11 @@
     "address": "4408 Route 414, Burdett, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.446890189898,
+    "longitude": -76.86384334983,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Silver Thread Vineyard",
@@ -1127,7 +1575,11 @@
     "address": "1401 Caywood Road, Lodi, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.5870427922175,
+    "longitude": -76.86120130670174,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Six Eighty Cellars, 680 Cellars",
@@ -1137,7 +1589,11 @@
     "address": "5986 State Rte 89, Romulus, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.732616014487,
+    "longitude": -76.767391558351,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Song Hill Winery",
@@ -1147,7 +1603,11 @@
     "address": "521 County Rd 9, Victor, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 43.014125776606,
+    "longitude": -77.398464152992,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Sterling Valley Vineyards",
@@ -1157,7 +1617,11 @@
     "address": "2128 Rte 104a, Sterling, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 43.369903240808,
+    "longitude": -76.623338362145,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Stever Hill Vineyards",
@@ -1167,7 +1631,11 @@
     "address": "4019 Stever Hill Rd, Branchport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.583934880528,
+    "longitude": -77.173553815216,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Stony Lonesome Wine Cellars/Passion Feet Vineyards",
@@ -1177,7 +1645,11 @@
     "address": "623 Lerch Rd, T/O Fayette, Geneva, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.820470522698,
+    "longitude": -76.922773925268,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Story Lonesome Wine Cellars/Passion Feet Vineyards",
@@ -1187,7 +1659,11 @@
     "address": "623 Lerch Rd, Geneva, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.820470522698,
+    "longitude": -76.922773925268,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Swedish Hill Winery",
@@ -1197,7 +1673,11 @@
     "address": "4565 Route 414, Romulus, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.75810834332,
+    "longitude": -76.80207276066139,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Sweetland Farm",
@@ -1207,7 +1687,11 @@
     "address": "9732 Rte 96, Trumansburg, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.554022232986,
+    "longitude": -76.678664032391,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Tabora Farm & Winery",
@@ -1217,7 +1701,11 @@
     "address": "4978 Lakemont Himrod Rd, Dundee, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.524173168414,
+    "longitude": -76.92955321385,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Terra Di Lavoro Vineyards",
@@ -1227,7 +1715,11 @@
     "address": "9013 Nys Rte 414, Lodi, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.586308044566,
+    "longitude": -76.85141657653,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "The Apple Station Winery",
@@ -1237,7 +1729,11 @@
     "address": "5279 Cross Road, Cayuga, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.875168153143,
+    "longitude": -76.683355696071,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "The Brute, A Finger Lakes Focused Wine Bar",
@@ -1247,7 +1743,11 @@
     "address": "8629 Oak Hill Rd, Arkport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.421465137355,
+    "longitude": -77.686678960176,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "The Hector Wine Company",
@@ -1257,7 +1757,11 @@
     "address": "5610 Nys Route 414, Hector, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.506766874067,
+    "longitude": -76.876253012588,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "The Lake Keuka Wine Co",
@@ -1267,7 +1771,11 @@
     "address": "8843 Greyton H Taylor Mem'L Dr, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.428088338355,
+    "longitude": -77.208937869983,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Thirsty Owl Wine Company",
@@ -1277,7 +1785,11 @@
     "address": "6799 Elm Beach Road, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.692619611498,
+    "longitude": -76.745409647384,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Toast Winery",
@@ -1287,7 +1799,11 @@
     "address": "4499 State Rte 14, Rock Stream, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.45214586174,
+    "longitude": -76.909660375081,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Toro Run Winery, Six Eighty Cellars, 680 Cellars",
@@ -1297,7 +1813,11 @@
     "address": "3050 Swick Rd, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.726270257946,
+    "longitude": -76.764885733019,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Torrey Ridge Winery Earle Estates Meadery",
@@ -1307,7 +1827,11 @@
     "address": "2770 Rte 14, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.63093619594,
+    "longitude": -76.943941854849,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Traveling Vineyard",
@@ -1317,7 +1841,11 @@
     "address": "1 Lake Niagara Ln, Naples, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.668710062614,
+    "longitude": -77.3808852131695,
+    "coordinateAccuracy": "approximate",
+    "geocodeSource": "Nearby winery-license locations"
   },
   {
     "name": "Treleaven",
@@ -1327,7 +1855,11 @@
     "address": "658 Lake Road, T/O Genoa, King Ferry, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.650765709721,
+    "longitude": -76.635546382334,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Trestle 31",
@@ -1337,7 +1869,11 @@
     "address": "670 Rte 14, Penn Yan, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.731845367431,
+    "longitude": -76.97175714794,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Usonia Wine",
@@ -1347,7 +1883,11 @@
     "address": "6677 State Rte 96a, Ste C, Ovid, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.700875911185,
+    "longitude": -76.8767035003,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Valkyrie Crafted Libations",
@@ -1357,7 +1897,11 @@
     "address": "4732 Rte 414, 1st Fl, Burdett, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.463487453234,
+    "longitude": -76.865730214425,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Ventosa Vineyards",
@@ -1367,7 +1911,11 @@
     "address": "3440 Route 96a, Geneva, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.858834886012,
+    "longitude": -76.936194230893,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Vineyard View Winery",
@@ -1377,7 +1925,11 @@
     "address": "2971 Williams Hill Rd, Keuka Park, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.623411476733,
+    "longitude": -77.101667984511,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Wagner Vineyards",
@@ -1387,7 +1939,11 @@
     "address": "9322 Route 414, Lodi, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.573165615646,
+    "longitude": -76.858157225087,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Weis Vineyards",
@@ -1397,7 +1953,11 @@
     "address": "10014 Day Rd, Hammondsport, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.481794612594,
+    "longitude": -77.135000543883,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Wellspring Vineyard",
@@ -1407,7 +1967,11 @@
     "address": "14923 Sterling Valley Rd, Sterling, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 43.339405976769,
+    "longitude": -76.642969694861,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Yates Cellars",
@@ -1417,7 +1981,11 @@
     "address": "3170 Route 54a, Bluff Point, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.606572702231,
+    "longitude": -77.116264133514,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   },
   {
     "name": "Zugibe Vineyards",
@@ -1427,6 +1995,10 @@
     "address": "4277 E Lake Road, Geneva, NY",
     "source": "New York State Liquor Authority license directory",
     "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
-    "verification": "License directory — visitor details pending"
+    "verification": "License directory — visitor details pending",
+    "latitude": 42.823848530577,
+    "longitude": -76.978698025897,
+    "geocodeSource": "U.S. Census Geocoder",
+    "coordinateAccuracy": "address"
   }
 ]
