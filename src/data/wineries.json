@@ -1,0 +1,1432 @@
+[
+  {
+    "name": "Agness Wine Cellars",
+    "lake": "Keuka Lake",
+    "city": "Pulteney",
+    "county": "Steuben",
+    "address": "14157 W Lake Rd, Pulteney, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Airy Acres Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Interlaken",
+    "county": "Seneca",
+    "address": "8011 Footes Corners Rd, Interlaken, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Anthony Road Wine Co",
+    "lake": "Keuka Lake",
+    "city": "Penn Yann",
+    "county": "Yates",
+    "address": "1020 Anthony Rd, Penn Yann, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Apple Barrel Orchards",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "2673 Sand Hill Rd, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Atwater Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Burdett",
+    "county": "Schuyler",
+    "address": "5055 Ny Route 414, Burdett, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Azure Hill Winery",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "8716 Gallagher Road, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Barnstormer Winery",
+    "lake": "Seneca Lake",
+    "city": "Rock Stream",
+    "county": "Schuyler",
+    "address": "4184 Rte 14, Rock Stream, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Bc Farm Wnry & Barrington Cellars",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "2690 Gray Road, Vineyard & Barrington Cellars, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Belhurst Estate Winery",
+    "lake": "Seneca Lake",
+    "city": "Romulus",
+    "county": "Seneca",
+    "address": "5525 E Lake Road, Romulus, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Bet The Farm",
+    "lake": "Cayuga Lake",
+    "city": "Trumansburg",
+    "county": "Tompkins",
+    "address": "4204 Krums Corners Rd, Trumansburg, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Billsboro Winery",
+    "lake": "Canandaigua Lake",
+    "city": "Geneva",
+    "county": "Ontario",
+    "address": "4760 W Lake Road, Geneva, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Black Diamond Farm",
+    "lake": "Seneca Lake",
+    "city": "Trumansburg",
+    "county": "Seneca",
+    "address": "4675 Seneca Rd, Trumansburg, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Bloomer Creek Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5301 Sr 414, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Boland Thomas Vineyards,",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "3024 County Rd 138, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Boundary Breaks",
+    "lake": "Seneca Lake",
+    "city": "Lodi",
+    "county": "Seneca",
+    "address": "1428 Porter Covert Rd, Lodi, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Bright Leaf Vineyard",
+    "lake": "Cayuga Lake",
+    "city": "King Ferry",
+    "county": "Cayuga",
+    "address": "1250 Clearview Rd, King Ferry, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Bristol Valley Vineyards",
+    "lake": "Canandaigua Lake",
+    "city": "Bloomfield",
+    "county": "Ontario",
+    "address": "7235 Lane Rd, Bloomfield, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Canandaigua Wine Company",
+    "lake": "Canandaigua Lake",
+    "city": "Canandaigua",
+    "county": "Ontario",
+    "address": "116 Buffalo St, Canandaigua, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Castel Grisch",
+    "lake": "Seneca Lake",
+    "city": "Watkins Glen",
+    "county": "Schuyler",
+    "address": "3380 County Rte 28, Watkins Glen, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Catharine Valley",
+    "lake": "Seneca Lake",
+    "city": "Burdett",
+    "county": "Schuyler",
+    "address": "4201 State Route 414, T/O Hector, Burdett, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Caywood Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Lodi",
+    "county": "Seneca",
+    "address": "9666 Route 414, Lodi, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Chateau Dusseau",
+    "lake": "Cayuga Lake",
+    "city": "Locke",
+    "county": "Cayuga",
+    "address": "5292 Erron Hill Rd, Locke, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Chateau Frank",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "9683 Middle Road, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Chateau Lafayette Reneau",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5081 State Rte 414, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Chateau Renaissance",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "7494 Fish Hatchery Rd, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Cjs Vineyards",
+    "lake": "Cayuga Lake",
+    "city": "Auburn",
+    "county": "Cayuga",
+    "address": "6900 Fosterville Rd, Auburn, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Colloca Estate Winery",
+    "lake": "Cayuga Lake",
+    "city": "Sterling",
+    "county": "Cayuga",
+    "address": "14678 W Bay Rd, Sterling, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Constantia Wine Company",
+    "lake": "Cayuga Lake",
+    "city": "Scipio Center",
+    "county": "Cayuga",
+    "address": "3262 Long Hill Rd, Scipio Center, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Cool Climate Wine Group, The",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "491 State Rte 54, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Damiani Wine Cellars",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5281 Peach Orchard Rd, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Deep Root Vineyard",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "10391 Cross St, Roff Hill Rd & Gallagher, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Divided Sky Vineyard",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "9570 Middle Rd, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Domaine Leseurre",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "13920 State Rte 54, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Drink This",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "10304 County Rte 76, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Element Winery, The",
+    "lake": "Keuka Lake",
+    "city": "Arkport",
+    "county": "Steuben",
+    "address": "27 West Ave, Arkport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Firelane 6 Winery",
+    "lake": "Cayuga Lake",
+    "city": "Moravia",
+    "county": "Cayuga",
+    "address": "2960 State Route 38, Moravia, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Flatt Rock",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5835 Spirawk Rd, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Forge Cellars",
+    "lake": "Seneca Lake",
+    "city": "Burdett",
+    "county": "Schuyler",
+    "address": "3775 Mathews Rd, Burdett, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Fox Run",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "670 Route 14, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Frontenac Point Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Trumansburg",
+    "county": "Seneca",
+    "address": "9501 Route 89, Trumansburg, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Fulkerson Wine Cellars",
+    "lake": "Seneca Lake",
+    "city": "Dundee",
+    "county": "Yates",
+    "address": "5576 Route 14, Dundee, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Ghost Light Cellars",
+    "lake": "Seneca Lake",
+    "city": "Watkins Glen",
+    "county": "Schuyler",
+    "address": "4024 State Route 14, Watkins Glen, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Giancarelli Brothers Winery",
+    "lake": "Cayuga Lake",
+    "city": "Weedsport",
+    "county": "Cayuga",
+    "address": "10252 Shortcut Rd, Weedsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Glenhaven Farm",
+    "lake": "Seneca Lake",
+    "city": "Trumansburg",
+    "county": "Schuyler",
+    "address": "6121 Sirrine Road, Trumansburg, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Glenora Wine Cellars",
+    "lake": "Seneca Lake",
+    "city": "Dundee",
+    "county": "Yates",
+    "address": "5435 Rte 14, Dundee, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Goose Watch Winery",
+    "lake": "Seneca Lake",
+    "city": "Romulus",
+    "county": "Seneca",
+    "address": "5480 Route 89, Romulus, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Gotham Winery",
+    "lake": "Keuka Lake",
+    "city": "Branchport",
+    "county": "Yates",
+    "address": "4021 Italy Hill Rd, Branchport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Hazlitts 1852 Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5712 Rte 414, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Heart & Hands Wine Company",
+    "lake": "Cayuga Lake",
+    "city": "Union Springs",
+    "county": "Cayuga",
+    "address": "4162 State Route 90n, Farleys Point Rd & Carrs Cove, Union Springs, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Hermann J. Wiemer Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Dundee",
+    "county": "Yates",
+    "address": "3962 Route 14, Dundee, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Heron Hill Winery",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "9301 County Rte 76, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Hickory Hollow Wine Cellars, Nathan K, Chepika",
+    "lake": "Seneca Lake",
+    "city": "Dundee",
+    "county": "Yates",
+    "address": "20 Hollister St, Unit 3, Dundee, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Highland Cellars",
+    "lake": "Seneca Lake",
+    "city": "Rock Stream",
+    "county": "Schuyler",
+    "address": "1556 Altay Road, Rock Stream, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Hillick & Hobbs Estate",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "7448 County Rd 153, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Hosmer",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "6999 Route 89, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Hunt Country Vineyards",
+    "lake": "Keuka Lake",
+    "city": "Branchport",
+    "county": "Yates",
+    "address": "4021 Italy Hill Rd, Branchport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Inspire Moore Winery & Vineyard",
+    "lake": "Canandaigua Lake",
+    "city": "Naples",
+    "county": "Ontario",
+    "address": "197 N Main St, Naples, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Izzos White Barn Winery",
+    "lake": "Cayuga Lake",
+    "city": "Cayuga",
+    "county": "Cayuga",
+    "address": "6634 Cayuga Road, Rt 20 To North & Genesee To So, Cayuga, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "J R Dill Winery",
+    "lake": "Seneca Lake",
+    "city": "Burdett",
+    "county": "Schuyler",
+    "address": "4922 State Route 414, Burdett, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Kelloggsville Farm Winery",
+    "lake": "Cayuga Lake",
+    "city": "Moravia",
+    "county": "Cayuga",
+    "address": "3453 White Rd, Moravia, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Kemmeter Wines",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "1030 Larzelere Rd, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Kettle Ridge Farm",
+    "lake": "Canandaigua Lake",
+    "city": "Victor",
+    "county": "Ontario",
+    "address": "515 Log Cabin Rd, Victor, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Keuka Lake Vineyards",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "8872 8882 County Route 76, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Keuka Spring Vineyards",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "243 Route 54 East Lake Rd, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Knapp Farms",
+    "lake": "Seneca Lake",
+    "city": "Romulus",
+    "county": "Seneca",
+    "address": "2770 Ernsberger Road, T/O Varick, Romulus, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Konstantin D. Frank &Sons Vinifera Wine Cellars",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "9749 Middle Road, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "L & D Acquisition",
+    "lake": "Canandaigua Lake",
+    "city": "Naples",
+    "county": "Ontario",
+    "address": "1 Lake Niagara Lane, Naples, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Lacey Magruder Vineyard & Winery",
+    "lake": "Canandaigua Lake",
+    "city": "Geneva",
+    "county": "Ontario",
+    "address": "462 Armstrong Rd, Geneva, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Lakeshore Winery",
+    "lake": "Seneca Lake",
+    "city": "Romulus",
+    "county": "Seneca",
+    "address": "5132 Route 89, Romulus, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Lakewood Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Watkins Glen",
+    "county": "Schuyler",
+    "address": "4024 State Route 14, Watkins Glen, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Lamoreaux Landing Wine",
+    "lake": "Seneca Lake",
+    "city": "Lodi",
+    "county": "Seneca",
+    "address": "9224 Route 414, Lodi, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Leidenfrost Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5677 Route 414, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Living Roots Wine & Company",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "8560 County Rte 87, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Long Point Winery",
+    "lake": "Cayuga Lake",
+    "city": "Aurora",
+    "county": "Cayuga",
+    "address": "1485 Lake Road, Aurora, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Lucas Winery",
+    "lake": "Seneca Lake",
+    "city": "Interlaken",
+    "county": "Seneca",
+    "address": "3862 County Road 150, Interlaken, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Magnus Ridge Winery",
+    "lake": "Seneca Lake",
+    "city": "Rock Stream",
+    "county": "Yates",
+    "address": "5900 State Route 14, Rock Stream, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Maivino",
+    "lake": "Cayuga Lake",
+    "city": "Ithaca",
+    "county": "Tompkins",
+    "address": "815 Taber St, Ithaca, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Mcgregor Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Dundee",
+    "county": "Yates",
+    "address": "5503 Dutch Street, Dundee, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Miles Wine Cellars",
+    "lake": "Seneca Lake",
+    "city": "Himrod",
+    "county": "Yates",
+    "address": "168 Randall Crossing Road, Himrod, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Missick Cellars",
+    "lake": "Seneca Lake",
+    "city": "Dundee",
+    "county": "Yates",
+    "address": "150 Poplar Point Rd, Dundee, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Montezuma Winery",
+    "lake": "Seneca Lake",
+    "city": "Seneca Falls",
+    "county": "Seneca",
+    "address": "2981 Auburn Rd, Seneca Falls, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Muranda Cheese Co",
+    "lake": "Seneca Lake",
+    "city": "Waterloo",
+    "county": "Seneca",
+    "address": "3075 Rte 96 S, Buildings 1 & 2, Waterloo, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Naples Valley Wine Cellars",
+    "lake": "Canandaigua Lake",
+    "city": "Naples",
+    "county": "Ontario",
+    "address": "6259 Hawks Rd, Naples, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Nine-Four Wines",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5281 Peach Orchard Rd, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Olfactory Farm",
+    "lake": "Cayuga Lake",
+    "city": "Red Creek",
+    "county": "Cayuga",
+    "address": "12973 Upton Rd, Red Creek, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Once Finger Lakes",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "655 Ny-14, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Osmote Wine",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "6677 State Rte 96a, Suite C, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Pantomime Mixtures",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "3839 Ball Diamond Rd, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Plane'S Cayuga Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "6800 State Route 89, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Pleasant Valley Wine Co",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "8260 Pleasant Valley Rd, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Point Of The Bluff Vineyard",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "10304 County Rte 76, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Poplar Ridge Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Valois",
+    "county": "Seneca",
+    "address": "9782 Route 414, Valois, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Ports Of New York",
+    "lake": "Cayuga Lake",
+    "city": "Ithaca",
+    "county": "Tompkins",
+    "address": "815 Taber St, Ithaca, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Prejean",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "561 Leach Rd, Aka 2634 Route 14, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Quarry Ridge Winery",
+    "lake": "Cayuga Lake",
+    "city": "Union Springs",
+    "county": "Cayuga",
+    "address": "4242 State Rte 90, Union Springs, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Randolph O'Neill Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "6965 Rte 89, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Rasta Ranch Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5882 Route 414, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Ravines Wine Cellars",
+    "lake": "Canandaigua Lake",
+    "city": "Geneva",
+    "county": "Ontario",
+    "address": "400 Barracks Rd, Geneva, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Raymor Estate Cellars",
+    "lake": "Canandaigua Lake",
+    "city": "Bloomfield",
+    "county": "Ontario",
+    "address": "3263 Wheeler Station Rd, Bloomfield, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Red Newt Cellars",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "3675 Tichenor Rd, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Red Tail Ridge Winery",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "846 St Rte 14, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Rock Stream Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Rock Stream",
+    "county": "Yates",
+    "address": "378 Allen Road, Rock Stream, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Ryan William Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5247 State Route 414, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Savor Vineyards & Wines",
+    "lake": "Keuka Lake",
+    "city": "Arkport",
+    "county": "Steuben",
+    "address": "8437 Oak Hill Rd, Arkport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Scout Vineyards",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "468 State Rte 14, Unit B, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Seneca Shore Wine Cellars",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "929 Davy Rd, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Serenity Vineyards",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "930 Davy Road, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Shalestone Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Lodi",
+    "county": "Seneca",
+    "address": "9681 Rte 414, Lodi, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Shaw Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Himrod",
+    "county": "Yates",
+    "address": "3901 State Route 14 Unit 2, Himrod, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Sheldrake Point Vineyard & Winery",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "7448 County Rd 153, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Shepherdess Cellars",
+    "lake": "Seneca Lake",
+    "city": "Interlaken",
+    "county": "Seneca",
+    "address": "8189 Ny Route 89, Interlaken, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Silver Springs Winery",
+    "lake": "Seneca Lake",
+    "city": "Burdett",
+    "county": "Schuyler",
+    "address": "4408 Route 414, Burdett, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Silver Thread Vineyard",
+    "lake": "Seneca Lake",
+    "city": "Lodi",
+    "county": "Seneca",
+    "address": "1401 Caywood Road, Lodi, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Six Eighty Cellars, 680 Cellars",
+    "lake": "Seneca Lake",
+    "city": "Romulus",
+    "county": "Seneca",
+    "address": "5986 State Rte 89, Romulus, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Song Hill Winery",
+    "lake": "Canandaigua Lake",
+    "city": "Victor",
+    "county": "Ontario",
+    "address": "521 County Rd 9, Victor, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Sterling Valley Vineyards",
+    "lake": "Cayuga Lake",
+    "city": "Sterling",
+    "county": "Cayuga",
+    "address": "2128 Rte 104a, Sterling, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Stever Hill Vineyards",
+    "lake": "Keuka Lake",
+    "city": "Branchport",
+    "county": "Yates",
+    "address": "4019 Stever Hill Rd, Branchport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Stony Lonesome Wine Cellars/Passion Feet Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Geneva",
+    "county": "Seneca",
+    "address": "623 Lerch Rd, T/O Fayette, Geneva, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Story Lonesome Wine Cellars/Passion Feet Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Geneva",
+    "county": "Seneca",
+    "address": "623 Lerch Rd, Geneva, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Swedish Hill Winery",
+    "lake": "Seneca Lake",
+    "city": "Romulus",
+    "county": "Seneca",
+    "address": "4565 Route 414, Romulus, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Sweetland Farm",
+    "lake": "Seneca Lake",
+    "city": "Trumansburg",
+    "county": "Seneca",
+    "address": "9732 Rte 96, Trumansburg, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Tabora Farm & Winery",
+    "lake": "Seneca Lake",
+    "city": "Dundee",
+    "county": "Yates",
+    "address": "4978 Lakemont Himrod Rd, Dundee, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Terra Di Lavoro Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Lodi",
+    "county": "Seneca",
+    "address": "9013 Nys Rte 414, Lodi, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "The Apple Station Winery",
+    "lake": "Cayuga Lake",
+    "city": "Cayuga",
+    "county": "Cayuga",
+    "address": "5279 Cross Road, Cayuga, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "The Brute, A Finger Lakes Focused Wine Bar",
+    "lake": "Keuka Lake",
+    "city": "Arkport",
+    "county": "Steuben",
+    "address": "8629 Oak Hill Rd, Arkport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "The Hector Wine Company",
+    "lake": "Seneca Lake",
+    "city": "Hector",
+    "county": "Schuyler",
+    "address": "5610 Nys Route 414, Hector, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "The Lake Keuka Wine Co",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "8843 Greyton H Taylor Mem'L Dr, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Thirsty Owl Wine Company",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "6799 Elm Beach Road, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Toast Winery",
+    "lake": "Seneca Lake",
+    "city": "Rock Stream",
+    "county": "Schuyler",
+    "address": "4499 State Rte 14, Rock Stream, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Toro Run Winery, Six Eighty Cellars, 680 Cellars",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "3050 Swick Rd, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Torrey Ridge Winery Earle Estates Meadery",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "2770 Rte 14, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Traveling Vineyard",
+    "lake": "Canandaigua Lake",
+    "city": "Naples",
+    "county": "Ontario",
+    "address": "1 Lake Niagara Ln, Naples, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Treleaven",
+    "lake": "Cayuga Lake",
+    "city": "King Ferry",
+    "county": "Cayuga",
+    "address": "658 Lake Road, T/O Genoa, King Ferry, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Trestle 31",
+    "lake": "Keuka Lake",
+    "city": "Penn Yan",
+    "county": "Yates",
+    "address": "670 Rte 14, Penn Yan, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Usonia Wine",
+    "lake": "Seneca Lake",
+    "city": "Ovid",
+    "county": "Seneca",
+    "address": "6677 State Rte 96a, Ste C, Ovid, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Valkyrie Crafted Libations",
+    "lake": "Seneca Lake",
+    "city": "Burdett",
+    "county": "Schuyler",
+    "address": "4732 Rte 414, 1st Fl, Burdett, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Ventosa Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Geneva",
+    "county": "Seneca",
+    "address": "3440 Route 96a, Geneva, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Vineyard View Winery",
+    "lake": "Keuka Lake",
+    "city": "Keuka Park",
+    "county": "Yates",
+    "address": "2971 Williams Hill Rd, Keuka Park, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Wagner Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Lodi",
+    "county": "Seneca",
+    "address": "9322 Route 414, Lodi, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Weis Vineyards",
+    "lake": "Keuka Lake",
+    "city": "Hammondsport",
+    "county": "Steuben",
+    "address": "10014 Day Rd, Hammondsport, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Wellspring Vineyard",
+    "lake": "Cayuga Lake",
+    "city": "Sterling",
+    "county": "Cayuga",
+    "address": "14923 Sterling Valley Rd, Sterling, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Yates Cellars",
+    "lake": "Keuka Lake",
+    "city": "Bluff Point",
+    "county": "Yates",
+    "address": "3170 Route 54a, Bluff Point, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  },
+  {
+    "name": "Zugibe Vineyards",
+    "lake": "Seneca Lake",
+    "city": "Geneva",
+    "county": "Seneca",
+    "address": "4277 E Lake Road, Geneva, NY",
+    "source": "New York State Liquor Authority license directory",
+    "sourceUrl": "https://data.ny.gov/Economic-Development/new-york-wineries/tyci-urth",
+    "verification": "License directory — visitor details pending"
+  }
+]

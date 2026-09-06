@@ -1,11 +1,11 @@
-const lakeGroups = {
-  'Canandaigua Lake': ['Arbor Hill Grapery & Winery','Hazlitt Red Cat Cellars','Heron Hill Tasting Room at Bristol','Inspire Moore Winery'],
-  'Keuka Lake': ['Agricolae Estate Winery','Barrington Cellars','Bully Hill Vineyards','Domaine LeSeurre Winery','Dr. Konstantin Frank Winery','Heron Hill Winery','Hunt Country Vineyards','Keuka Lake Vineyards','Keuka Spring Vineyards','McGregor Vineyard','Pleasant Valley Wine Company','Point of the Bluff Vineyards','Stever Hill Vineyards','Vineyard View Winery','Weis Vineyards'],
-  'Seneca Lake': ['Anthony Road Wine Company','Atwater Vineyards','Belhurst Estate Winery','Billsboro Winery','Boundary Breaks','Cane & Vine Wine Cellars','CK Cellars','Damiani Wine Cellars','Fox Run Vineyards','Fulkerson Winery','Glenora Wine Cellars','Hector Wine Company','Hermann J. Wiemer Vineyard','Lakewood Vineyards','Lamoreaux Landing Wine Cellars','Leidenfrost Vineyards','Prejean Winery','Ravines Wine Cellars','Red Newt Cellars','Rock Stream Vineyards','Seneca Shore Wine Cellars','Silver Thread Vineyard','Standing Stone Vineyards','Tabora Farm & Winery','Three Brothers Wineries & Estates','Toast Winery','Ventosa Vineyards','Wagner Vineyards Estate Winery','White Springs Winery','Zugibe Vineyards'],
-  'Cayuga Lake': ['Americana Vineyards','Bet the Farm Winery','Bright Leaf Vineyard','Buttonwood Grove Winery','Cayuga Ridge Estate Winery','Heart & Hands Wine Company','Hosmer Winery','Long Point Winery','Lucas Vineyards','Montezuma Winery','Sheldrake Point Winery','Six Eighty Cellars','Swedish Hill Winery','Thirsty Owl Wine Company','Treleaven Wines']
-};
+import directory from './wineries.json';
+
 const lakeX={'Canandaigua Lake':12,'Keuka Lake':31,'Seneca Lake':55,'Cayuga Lake':79};
 const colors={'Canandaigua Lake':'#9b5c35','Keuka Lake':'#315c54','Seneca Lake':'#722f47','Cayuga Lake':'#2e6073'};
-let id=1;
-export const wineries=Object.entries(lakeGroups).flatMap(([lake,names])=>names.map((name,index)=>({id:id++,name,lake,area:index%2?'East or north shore':'West or south shore',distance:'Route time available soon',score:null,ratings:0,tags:[lake.replace(' Lake',''),'Reference listing'],x:lakeX[lake]+((index%3)-1)*2.3,y:14+(index%12)*6.2,color:colors[lake],desc:'Added from the regional reference map. Address, visitor details, and current tasting information are being verified.',wines:[],verification:'Reference sourced'})));
-export const lakes=Object.keys(lakeGroups);
+const counts={};
+export const wineries=directory.map((record,index)=>{
+  const position=counts[record.lake]||0;
+  counts[record.lake]=position+1;
+  return {...record,id:index+1,area:record.city?`${record.city}, ${record.county} County`:'Finger Lakes region',distance:'Route time available soon',score:null,ratings:0,tags:[record.lake.replace(' Lake',''),record.city||'Regional listing'],x:lakeX[record.lake]+((position%5)-2)*1.25,y:9+(position%15)*5.5,color:colors[record.lake],desc:`Listed in the New York State winery-license directory at ${record.address}. Public tasting hours and current flight details still need verification.`,wines:[]};
+});
+export const lakes=Object.keys(lakeX);

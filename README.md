@@ -1,4 +1,4 @@
-# One Sip — Finger Lakes prototype
+# Sips — Wine Journey
 
 A mobile-first, Vercel-ready interactive prototype for shared wine trips and tastings.
 
