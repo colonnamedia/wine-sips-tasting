@@ -5,7 +5,7 @@ const colors={'Canandaigua Lake':'#9b5c35','Keuka Lake':'#315c54','Seneca Lake':
 const popularByLake={
   'Canandaigua Lake':['Ravines Wine Cellars','Inspire Moore Winery & Vineyard','Billsboro Winery','Naples Valley Wine Cellars','Kettle Ridge Farm'],
   'Keuka Lake':['Konstantin D. Frank &Sons Vinifera Wine Cellars','Weis Vineyards','Heron Hill Winery','Keuka Spring Vineyards','Domaine Leseurre','Keuka Lake Vineyards','Point Of The Bluff Vineyard','Hunt Country Vineyards'],
-  'Seneca Lake':['Hermann J. Wiemer Vineyard','Boundary Breaks','Red Newt Cellars','Wagner Vineyards','Glenora Wine Cellars','Damiani Wine Cellars','Lakewood Vineyards','Forge Cellars','Atwater Vineyards','Lamoreaux Landing Wine'],
+  'Seneca Lake':['Airy Acres Vineyard','Hermann J. Wiemer Vineyard','Boundary Breaks','Red Newt Cellars','Wagner Vineyards','Glenora Wine Cellars','Damiani Wine Cellars','Lakewood Vineyards','Forge Cellars','Atwater Vineyards','Lamoreaux Landing Wine'],
   'Cayuga Lake':['Heart & Hands Wine Company','Constantia Wine Company','Treleaven','Long Point Winery','Bright Leaf Vineyard','Bet The Farm','Quarry Ridge Winery']
 };
 const discoveryTieBreak=name=>[...name].reduce((total,char)=>(total*31+char.charCodeAt(0))%997,0);
@@ -61,6 +61,42 @@ if(constantia)Object.assign(constantia,{
     ['2024 Uniquity Red Blend','Finger Lakes AVA · Cayuga Lake','$32','Dry Rosé & Reds','A structured Bordeaux-style blend with cherry, wild berry, integrated tannins and balanced acidity.']
   ]
 });
-const menuWineries=[heartAndHands,constantia].filter(Boolean);
+const airyAcres=regionalWineries.find(winery=>winery.name==='Airy Acres Vineyard');
+if(airyAcres)Object.assign(airyAcres,{
+  tags:['Seneca','Menu available','Choose 5 wines'],
+  desc:'An Interlaken vineyard with white, sparkling, rosé, red and specialty pours. Choose five wines from the photographed tasting list and record every sip.',
+  verification:'Menu supplied by a Sips traveler — availability may change',
+  menuNotice:'Menu photographed September 2026. The tasting listed a choice of five wines; specialty pours were $3 each. Confirm current wines, tasting price and hours before visiting.',
+  flightPrice:'Choose 5',
+  wines:[
+    ['2022 Dry Riesling','Dry Riesling','Ask winery','White'],
+    ['2023 Chardonnay','Chardonnay','Ask winery','White'],
+    ['2025 Chardonnay Barrel','Barrel Chardonnay','Ask winery','White'],
+    ['2025 Rkatsiteli Skin','Skin-contact Rkatsiteli','Ask winery','White'],
+    ['2025 Blanc de Blau','White wine','Ask winery','White'],
+    ['2024 Rkatsiteli','Rkatsiteli','Ask winery','White'],
+    ['2025 Riesling Farmhouse','Riesling','Ask winery','White'],
+    ['2023 Crosswind','White blend','Ask winery','White'],
+    ['2022 Semi-Dry Riesling','Semi-Dry Riesling','Ask winery','White'],
+    ['2023 Gewürztraminer','Gewürztraminer','Ask winery','White'],
+    ["2023 Betty’s Blend White",'White blend','Ask winery','White'],
+    ['2023 Glide Gewürz','Sparkling Gewürztraminer','Ask winery','Bubbles'],
+    ['2024 Glide Rosé','Sparkling Rosé','Ask winery','Bubbles'],
+    ['2024 Rosé','Rosé','Ask winery','Rosé'],
+    ['2025 Saperavi Rosé','Saperavi Rosé','Ask winery','Rosé'],
+    ["2023 Betty’s Blend Red",'Red blend','Ask winery','Red'],
+    ['2022 Cabernet Franc','Cabernet Franc','Ask winery','Red'],
+    ["2024 Aviator’s Red",'Red blend','Ask winery','Red'],
+    ['2021 Lemberger','Lemberger','Ask winery','Red'],
+    ['2023 Osprey','Red wine','Ask winery','Red'],
+    ['2023 Cabernet Sauvignon','Cabernet Sauvignon','Ask winery','Red'],
+    ['2024 Saperavi','Saperavi','Ask winery','Red'],
+    ['2023 Blanc de Blanc','Sparkling wine','$3 pour','Specialty pours'],
+    ['2024 Airport 6NY3','Specialty wine','$3 pour','Specialty pours'],
+    ['Library Wine White','Library selection','$3 pour','Specialty pours'],
+    ['Library Wine Red','Library selection','$3 pour','Specialty pours']
+  ]
+});
+const menuWineries=[heartAndHands,constantia,airyAcres].filter(Boolean);
 export const wineries=[...menuWineries,...regionalWineries.filter(winery=>!menuWineries.includes(winery))];
 export const lakes=Object.keys(lakeX);

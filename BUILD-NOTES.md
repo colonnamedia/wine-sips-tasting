@@ -12,6 +12,25 @@ This is the non-secret operating record for the project. Never add passwords, AP
 | Authentication and database | Supabase | Project created; browser credentials belong in Vercel environment variables |
 | Transactional email | Resend | Account created; connect to Supabase custom SMTP before public launch |
 
+## Deferred domain email setup
+
+- Add `sipswinejourney.com` to Resend and verify the DNS records through Vercel.
+- Use `accounts@sipswinejourney.com` as the Supabase Auth sender.
+- Connect Resend custom SMTP in Supabase and brand confirmation/reset emails as **Sips — Wine Tasting Journey**.
+- Set the Supabase Site URL to `https://sipswinejourney.com` and allow `https://sipswinejourney.com/**` as a redirect URL.
+- Send a fresh signup, confirmation and password-reset test after configuration.
+
+## Premium and verified rewards direction
+
+- Launch target: `$7.99/month` with an optional `$4.99/month` founding-member price and annual plan later.
+- A rating of 5 saves the wine to the member's **5-Sip Cellar**, enables direct winery purchase links, and supports scheduled or calendar reminders.
+- Do not award points because a wine received a 5; doing so would bias ratings. Award points for verified winery visits and completed tasting flights regardless of score.
+- Verify visits server-side using a one-mile geofence, acceptable GPS accuracy, timestamp and frequency limits. Add a rotating winery QR code or staff/receipt code as stronger verification.
+- Unverified ratings can remain in a private journal, but only verified ratings affect public scores or rewards.
+- Prefer digital or winery-funded rewards. Cap any Sips-funded reward cost at 10–15% of collected Premium revenue.
+- Suggested starting awards: 20 points for a verified check-in, 10 for completing a flight, 10 for QR verification, 10 for a first visit to a new winery, and 25 for a verified partner purchase.
+- Suggested rewards: digital badges/maps at 100–250 points, partner-funded tasting or merchandise upgrades at 500–750, and partner-funded order/shipping offers at 1,000–1,500.
+
 ## Vercel environment variables
 
 Add these to Production, Preview, and Development:
