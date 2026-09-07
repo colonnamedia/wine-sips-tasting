@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://wine-sips-tasting.vercel.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://wine-sips-tasting.vercel.app/trip-planner</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://wine-sips-tasting.vercel.app/wine-tasting</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://wine-sips-tasting.vercel.app/shared-tastings</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://wine-sips-tasting.vercel.app/my-wine-journal</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://wine-sips-tasting.vercel.app/winery-login</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sipswinejourney.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sipswinejourney.com/trip-planner</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sipswinejourney.com/wine-tasting</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sipswinejourney.com/shared-tastings</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sipswinejourney.com/my-wine-journal</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sipswinejourney.com/winery-login</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

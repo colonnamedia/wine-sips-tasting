@@ -8,7 +8,7 @@ This is the non-secret operating record for the project. Never add passwords, AP
 | --- | --- | --- |
 | Project email | Yahoo Mail | `sipswine@yahoo.com` |
 | Source code | GitHub | `colonnamedia/wine-sips-tasting` |
-| Hosting | Vercel | GitHub-connected project; production URL currently `https://wine-sips-tasting.vercel.app` |
+| Hosting | Vercel | GitHub-connected project; production domain `https://sipswinejourney.com` |
 | Authentication and database | Supabase | Project created; browser credentials belong in Vercel environment variables |
 | Transactional email | Resend | Account created; connect to Supabase custom SMTP before public launch |
 

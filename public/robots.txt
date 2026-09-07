@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wine-sips-tasting.vercel.app/sitemap.xml
+Sitemap: https://sipswinejourney.com/sitemap.xml

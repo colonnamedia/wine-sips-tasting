@@ -1,6 +1,6 @@
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 
-const origin='https://wine-sips-tasting.vercel.app';
+const origin='https://sipswinejourney.com';
 const pages={
   'trip-planner':{
     title:'Finger Lakes Wine Trip Planner | Sips Wine Tasting Journey',
