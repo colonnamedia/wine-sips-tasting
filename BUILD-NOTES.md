@@ -42,6 +42,10 @@ The last script grants Sips administrator access to the Supabase Auth account wh
 5. Publishing replaces the winery's previous public menu; drafts and archived menus remain private.
 6. The public `/wine-tasting` page automatically displays the published menu and its rateable wines.
 
+## Regional explorer structure
+
+Each wine territory gets its own Explore page, winery dataset, map position, SEO metadata, and directory-source disclosure. The New York State winery-license source belongs only to the Finger Lakes explorer and must not appear on future Napa Valley, Sonoma County, or other territory pages.
+
 ## CSV menu columns
 
 ```text
