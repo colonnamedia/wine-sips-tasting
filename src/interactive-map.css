@@ -1,29 +1,22 @@
-.interactiveMap{position:relative}
-.interactiveMapViewport{height:470px;border-radius:28px;position:relative;overflow:hidden;background:#dce2cc;box-shadow:inset 0 0 80px #30555422;touch-action:none;cursor:grab}
-.interactiveMapViewport:active{cursor:grabbing}
-.interactiveMapLayer{position:absolute;inset:0;transform-origin:0 0;will-change:transform}
-.interactiveMapLayer .fingerLakesMap{pointer-events:none}
-.interactivePin{position:absolute;border:3px solid #fff;color:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:0 7px 20px #1f25256b;transform:translate(-50%,-50%) scale(var(--pin-scale))!important;transform-origin:center;transition:box-shadow .15s,filter .15s;overflow:visible}
-.singlePin{width:32px;height:32px;padding:0;border-radius:50% 50% 50% 8px}
-.singlePin>svg{width:16px}
-.clusterPin{width:52px;height:52px;padding:0;border-radius:50%;font-size:17px}
-.clusterPin strong{font-weight:800}
-.interactivePin:hover,.interactivePin:focus-visible{z-index:10;filter:brightness(1.12);box-shadow:0 0 0 6px #fff8,0 8px 20px #1f25256b}
-.interactivePin span{display:none;position:absolute;left:27px;top:-8px;width:max-content;max-width:230px;border-radius:8px;background:#28171e;color:#fff;padding:7px 9px;font-size:11px;font-weight:700;box-shadow:0 7px 20px #21131a45}
-.interactivePin:hover span,.interactivePin:focus-visible span{display:block}
-.mapControls{position:absolute;z-index:12;right:16px;top:16px;display:flex;flex-direction:column;align-items:center;gap:6px}
-.mapControls button{width:42px;height:42px;border:1px solid #d5cac5;border-radius:11px;background:#fff;color:var(--wine);display:grid;place-items:center;box-shadow:0 4px 15px #2a1d2230;cursor:pointer}
-.mapControls button:disabled{opacity:.4}
-.mapControls svg{width:19px}
-.mapControls output{min-width:42px;border-radius:8px;background:#28171edb;color:#fff;padding:5px 3px;text-align:center;font-size:10px;font-weight:800}
-.interactiveMap.expanded{position:fixed;z-index:100;inset:0;background:#f4f0e9;padding:82px 18px 18px}
-.interactiveMap.expanded .interactiveMapViewport{height:100%;border-radius:20px}
-.expandedMapHead{position:absolute;z-index:102;left:0;right:0;top:0;height:72px;padding:10px 22px;background:#28171e;color:#fff;display:flex;align-items:center;justify-content:space-between}
+.interactiveMap{position:relative;height:470px;border-radius:28px;overflow:hidden;background:#dce2cc;box-shadow:inset 0 0 80px #30555422}
+.leafletMap{position:absolute;inset:0;z-index:1;background:#dce2cc}
+.leaflet-container{font-family:'DM Sans',sans-serif}
+.leaflet-control-zoom{border:0!important;box-shadow:0 5px 18px #24191d30!important}
+.leaflet-control-zoom a{width:42px!important;height:42px!important;line-height:40px!important;color:var(--wine)!important;border-color:#e0d6d0!important;font-size:23px!important}
+.leaflet-tooltip{border:0!important;border-radius:10px!important;padding:8px 10px!important;color:#312229!important;box-shadow:0 6px 18px #24191d30!important}
+.leaflet-tooltip strong{font-size:13px}
+.expandMapButton{position:absolute;z-index:500;right:14px;top:14px;border:1px solid #d5cac5;border-radius:11px;background:#fff;color:var(--wine);min-height:42px;padding:8px 11px;display:flex;align-items:center;gap:6px;box-shadow:0 5px 18px #24191d30;font-weight:700}
+.expandMapButton svg{width:18px}
+.interactiveMap .mapHint{z-index:500;pointer-events:none}
+.interactiveMap.expanded{position:fixed;z-index:100;inset:0;width:auto;height:auto;border-radius:0;padding-top:72px;background:#f4f0e9}
+.interactiveMap.expanded .leafletMap{top:72px}
+.expandedMapHead{position:absolute;z-index:502;left:0;right:0;top:0;height:72px;padding:10px 22px;background:#28171e;color:#fff;display:flex;align-items:center;justify-content:space-between}
 .expandedMapHead>div{display:flex;flex-direction:column}
 .expandedMapHead small{font-size:10px;letter-spacing:.14em;color:#d7bd94}
 .expandedMapHead strong{font:600 23px 'Playfair Display'}
 .expandedMapHead button{border:1px solid #ffffff55;border-radius:10px;background:#ffffff14;color:#fff;padding:9px 12px;display:flex;align-items:center;gap:6px}
 .expandedMapHead button svg{width:17px}
-.interactiveMap.expanded .mapHint,.interactiveMap.expanded .mapCredit{bottom:22px}
-@media(max-width:850px){.interactiveMapViewport{height:410px}}
-@media(max-width:560px){.interactiveMapViewport{height:350px}.interactiveMap.expanded{padding:70px 0 0}.interactiveMap.expanded .interactiveMapViewport{border-radius:0}.expandedMapHead{height:70px;padding:8px 13px}.expandedMapHead strong{font-size:19px}.expandedMapHead button{font-size:12px}.mapControls{right:10px;top:10px}.mapControls button{width:40px;height:40px}.interactivePin span{display:none!important}.interactiveMap .mapCredit{display:none}.interactiveMap.expanded .mapHint{left:10px;bottom:10px}}
+.interactiveMap.expanded .expandMapButton{display:none}
+.interactiveMap.expanded .mapHint{bottom:18px}
+@media(max-width:850px){.interactiveMap{height:410px}}
+@media(max-width:560px){.interactiveMap{height:350px;border-radius:18px}.interactiveMap.expanded{height:auto;border-radius:0;padding-top:70px}.interactiveMap.expanded .leafletMap{top:70px}.expandedMapHead{height:70px;padding:8px 13px}.expandedMapHead strong{font-size:19px}.expandedMapHead button{font-size:12px}.expandMapButton{right:10px;top:10px}.leaflet-control-zoom a{width:40px!important;height:40px!important;line-height:38px!important}.interactiveMap .mapHint{left:10px;bottom:10px;max-width:calc(100% - 20px);font-size:12px}}
