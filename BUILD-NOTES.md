@@ -28,7 +28,8 @@ This is the non-secret operating record for the project. Never add passwords, AP
 - Verify visits server-side using a one-mile geofence, acceptable GPS accuracy, timestamp and frequency limits. Add a rotating winery QR code or staff/receipt code as stronger verification.
 - Unverified ratings can remain in a private journal, but only verified ratings affect public scores or rewards.
 - Prefer digital or winery-funded rewards. Cap any Sips-funded reward cost at 10–15% of collected Premium revenue.
-- Suggested starting awards: 20 points for a verified check-in, 10 for completing a flight, 10 for QR verification, 10 for a first visit to a new winery, and 25 for a verified partner purchase.
+- Call the reward currency **Corks** so it cannot be confused with the 1-to-5 Sips wine-rating scale.
+- Suggested starting awards: 20 Corks for a verified check-in, 10 for completing a flight, 10 for QR verification, 10 for a first visit to a new winery, and 25 for a verified partner purchase.
 - Suggested rewards: digital badges/maps at 100–250 points, partner-funded tasting or merchandise upgrades at 500–750, and partner-funded order/shipping offers at 1,000–1,500.
 
 ## Vercel environment variables
