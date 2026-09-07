@@ -1,5 +1,5 @@
 import React,{useEffect,useRef,useState} from 'react';
-import L from 'leaflet';
+import * as L from 'leaflet';
 import {LocateFixed,Maximize2,Minimize2,Navigation} from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import './interactive-map.css';
@@ -7,6 +7,7 @@ import './interactive-map.css';
 export default function InteractiveMap({activeLake,wineries,onOpen}){
  const [expanded,setExpanded]=useState(false);
  const [locationStatus,setLocationStatus]=useState('idle');
+ const [mapReady,setMapReady]=useState(false);
  const container=useRef(null);
  const map=useRef(null);
  const markers=useRef(null);
@@ -16,11 +17,14 @@ export default function InteractiveMap({activeLake,wineries,onOpen}){
 
  useEffect(()=>{
   if(!container.current||map.current)return;
-  const instance=L.map(container.current,{center:[42.69,-76.93],zoom:8,zoomSnap:.5,zoomDelta:.5,minZoom:7,maxZoom:18,preferCanvas:true});
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(instance);
+  const instance=L.map(container.current,{center:[42.69,-76.93],zoom:8,zoomSnap:.5,zoomDelta:.5,minZoom:7,maxZoom:18,preferCanvas:true,fadeAnimation:false});
+  const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19,updateWhenIdle:false,keepBuffer:3});
+  const ready=()=>setMapReady(true);tiles.once('load',ready).once('tileerror',ready).addTo(instance);
   markers.current=L.layerGroup().addTo(instance);
   map.current=instance;
-  return()=>{instance.remove();map.current=null;markers.current=null};
+  const resize=new ResizeObserver(()=>instance.invalidateSize({pan:false,debounceMoveend:true}));resize.observe(container.current);
+  const frame=requestAnimationFrame(()=>instance.invalidateSize({pan:false}));const readyTimer=setTimeout(ready,2500);
+  return()=>{cancelAnimationFrame(frame);clearTimeout(readyTimer);resize.disconnect();instance.remove();map.current=null;markers.current=null};
  },[]);
 
  useEffect(()=>{
@@ -44,7 +48,8 @@ export default function InteractiveMap({activeLake,wineries,onOpen}){
 
  return <div className={`interactiveMap${expanded?' expanded':''}`}>
   {expanded&&<div className="expandedMapHead"><div><small>EXPLORE THE FINGER LAKES</small><strong>{activeLake==='All lakes'?'All winery locations':activeLake}</strong></div><button type="button" onClick={()=>setExpanded(false)}><Minimize2/>Close map</button></div>}
-  <div className="leafletMap" ref={container} aria-label={`Interactive map showing ${wineries.length} Finger Lakes winery locations`}/>
+  {!mapReady&&<div className="mapLoading"><i/><strong>Loading the Finger Lakes map…</strong></div>}
+  <div className={`leafletMap${mapReady?' ready':''}`} ref={container} aria-label={`Interactive map showing ${wineries.length} Finger Lakes winery locations`}/>
   <button className="expandMapButton" type="button" onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2/>:<Maximize2/>}<span>{expanded?'Close':'Full map'}</span></button>
   <button className={`locateMapButton ${locationStatus}`} type="button" onClick={useLocation} disabled={locationStatus==='locating'}><LocateFixed/><span>{locationStatus==='locating'?'Finding you…':locationStatus==='found'?'Location found':locationStatus==='denied'?'Location not allowed':locationStatus==='unavailable'?'Unavailable':'Use my location'}</span></button>
   <div className="mapHint"><Navigation size={15}/> {wineries.length} wineries · zoom for roads and towns</div>
