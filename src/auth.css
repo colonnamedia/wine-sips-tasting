@@ -1,7 +1,7 @@
 .avatar{min-width:38px;width:auto;padding:0 9px;border-radius:20px}
 .profileAuth{max-width:340px;margin:22px auto 0}
 .menu .signOut{color:#8a2f4d}
-.authBackdrop{position:fixed;inset:0;z-index:90;background:#160c11b8;display:grid;place-items:center;padding:18px}
+.authBackdrop{position:fixed;inset:0;z-index:2000;background:#160c11b8;display:grid;place-items:center;padding:18px}
 .authCard{position:relative;width:min(440px,100%);max-height:calc(100vh - 36px);overflow:auto;background:#fffaf4;border-radius:28px;padding:34px 30px;text-align:center;box-shadow:0 24px 70px #12080d88;animation:rise .3s ease}
 .authClose{position:absolute;right:16px;top:16px;width:38px;height:38px;border:0;border-radius:50%;background:#eee6e1;display:grid;place-items:center}
 .authMark{width:64px;height:64px;margin:0 auto 16px;border-radius:50% 50% 50% 12px;background:var(--wine);color:#fff;display:grid;place-items:center;font:600 38px 'Playfair Display';box-shadow:0 10px 24px #6e294244}
