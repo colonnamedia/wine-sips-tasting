@@ -55,7 +55,7 @@ function App(){
  const openAuth=mode=>{setAuthMode(mode||'signin');setAuthOpen(true)};
  const chooseRegion=e=>{const region=regions.find(r=>r.name===e.target.value);flash(region.active?'Finger Lakes selected':`${region.name} is coming soon`)};
  return <div className="shell">
-  <header><button className="brand" onClick={()=>go('discover')} aria-label="Sips Wine Tasting Journey home"><span>S</span><b>SIPS <i>WINE TASTING JOURNEY</i></b></button><label className="regionSelect"><MapPin size={15}/><select value="Finger Lakes" onChange={chooseRegion} aria-label="Choose a wine region">{regions.map(r=><option key={r.name} value={r.name}>{r.name}{r.active?'':' — Coming soon'}</option>)}</select><ChevronRight size={14}/></label><button className="avatar" onClick={openAccount} aria-label={session?'Open your wine journal':'Sign in or create an account'}>{session?initials:'JOIN'}</button></header>
+  <header><button className="brand" onClick={()=>go('discover')} aria-label="Sips Wine Tasting Journey home"><span>S</span><b>SIPS <i>WINE TASTING JOURNEY</i></b></button><label className="regionSelect"><MapPin size={15}/><select value="Finger Lakes" onChange={chooseRegion} aria-label="Choose a wine region">{regions.map(r=><option key={r.name} value={r.name}>{r.name}{r.active?'':' — Coming soon'}</option>)}</select><ChevronRight size={14}/></label><button className="avatar" onClick={openAccount} aria-label={session?'Open your wine journal':'Join or log in'}>{session?initials:'JOIN / LOGIN'}</button></header>
   <main>
    {tab==='discover'&&<Discover wineries={directory} onOpen={setSelected} trip={trip} addTrip={addTrip} flash={flash}/>}
    {tab==='trip'&&<Trip wineries={directory} trip={trip} ratings={ratings} onOpen={setSelected} flash={flash}/>}

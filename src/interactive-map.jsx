@@ -18,13 +18,18 @@ export default function InteractiveMap({activeLake,wineries,onOpen}){
  useEffect(()=>{
   if(!container.current||map.current)return;
   const instance=L.map(container.current,{center:[42.69,-76.93],zoom:8,zoomSnap:.5,zoomDelta:.5,minZoom:7,maxZoom:18,preferCanvas:true,fadeAnimation:false});
-  const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19,updateWhenIdle:false,keepBuffer:3});
-  const ready=()=>setMapReady(true);tiles.once('load',ready).once('tileerror',ready).addTo(instance);
+  let tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19,updateWhenIdle:false,keepBuffer:3,crossOrigin:true});
+  let tileErrors=0;let fallbackStarted=false;
+  const ready=()=>setMapReady(true);
+  const useFallback=()=>{if(fallbackStarted)return;fallbackStarted=true;instance.removeLayer(tiles);tiles=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap contributors &copy; CARTO',subdomains:'abcd',maxZoom:20,updateWhenIdle:false,keepBuffer:3,crossOrigin:true}).on('tileload',ready).on('load',ready).addTo(instance)};
+  tiles.on('tileload',ready).on('load',ready).on('tileerror',()=>{tileErrors+=1;if(tileErrors>=3)useFallback()}).addTo(instance);
   markers.current=L.layerGroup().addTo(instance);
   map.current=instance;
+  const refresh=()=>{instance.invalidateSize({pan:false});tiles.redraw()};
   const resize=new ResizeObserver(()=>instance.invalidateSize({pan:false,debounceMoveend:true}));resize.observe(container.current);
+  addEventListener('pageshow',refresh);document.addEventListener('visibilitychange',refresh);
   const frame=requestAnimationFrame(()=>instance.invalidateSize({pan:false}));const readyTimer=setTimeout(ready,2500);
-  return()=>{cancelAnimationFrame(frame);clearTimeout(readyTimer);resize.disconnect();instance.remove();map.current=null;markers.current=null};
+  return()=>{cancelAnimationFrame(frame);clearTimeout(readyTimer);resize.disconnect();removeEventListener('pageshow',refresh);document.removeEventListener('visibilitychange',refresh);instance.remove();map.current=null;markers.current=null};
  },[]);
 
  useEffect(()=>{
