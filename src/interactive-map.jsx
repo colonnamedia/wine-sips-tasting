@@ -1,14 +1,16 @@
 import React,{useEffect,useRef,useState} from 'react';
 import L from 'leaflet';
-import {Maximize2,Minimize2,Navigation} from 'lucide-react';
+import {LocateFixed,Maximize2,Minimize2,Navigation} from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import './interactive-map.css';
 
 export default function InteractiveMap({activeLake,wineries,onOpen}){
  const [expanded,setExpanded]=useState(false);
+ const [locationStatus,setLocationStatus]=useState('idle');
  const container=useRef(null);
  const map=useRef(null);
  const markers=useRef(null);
+ const userMarker=useRef(null);
  const onOpenRef=useRef(onOpen);
  onOpenRef.current=onOpen;
 
@@ -38,10 +40,13 @@ export default function InteractiveMap({activeLake,wineries,onOpen}){
  useEffect(()=>{const timer=setTimeout(()=>map.current?.invalidateSize({pan:false}),100);return()=>clearTimeout(timer)},[expanded]);
  useEffect(()=>{if(!expanded)return;const close=event=>{if(event.key==='Escape')setExpanded(false)};addEventListener('keydown',close);const previous=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{removeEventListener('keydown',close);document.body.style.overflow=previous}},[expanded]);
 
+ const useLocation=()=>{if(!navigator.geolocation){setLocationStatus('unavailable');return}setLocationStatus('locating');navigator.geolocation.getCurrentPosition(({coords})=>{const point=[coords.latitude,coords.longitude];if(userMarker.current)userMarker.current.setLatLng(point);else userMarker.current=L.circleMarker(point,{radius:9,weight:4,color:'#fff',fillColor:'#256d78',fillOpacity:1}).bindTooltip('Your location',{permanent:false,direction:'top'}).addTo(map.current);map.current.setView(point,12,{animate:true});setLocationStatus('found')},()=>setLocationStatus('denied'),{enableHighAccuracy:true,timeout:12000,maximumAge:300000})};
+
  return <div className={`interactiveMap${expanded?' expanded':''}`}>
   {expanded&&<div className="expandedMapHead"><div><small>EXPLORE THE FINGER LAKES</small><strong>{activeLake==='All lakes'?'All winery locations':activeLake}</strong></div><button type="button" onClick={()=>setExpanded(false)}><Minimize2/>Close map</button></div>}
   <div className="leafletMap" ref={container} aria-label={`Interactive map showing ${wineries.length} Finger Lakes winery locations`}/>
   <button className="expandMapButton" type="button" onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2/>:<Maximize2/>}<span>{expanded?'Close':'Full map'}</span></button>
+  <button className={`locateMapButton ${locationStatus}`} type="button" onClick={useLocation} disabled={locationStatus==='locating'}><LocateFixed/><span>{locationStatus==='locating'?'Finding you…':locationStatus==='found'?'Location found':locationStatus==='denied'?'Location not allowed':locationStatus==='unavailable'?'Unavailable':'Use my location'}</span></button>
   <div className="mapHint"><Navigation size={15}/> {wineries.length} wineries · zoom for roads and towns</div>
  </div>
 }
