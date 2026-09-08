@@ -5,5 +5,6 @@
   <url><loc>https://sipswinejourney.com/wine-tasting</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sipswinejourney.com/shared-tastings</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://sipswinejourney.com/my-wine-journal</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sipswinejourney.com/for-wineries</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sipswinejourney.com/winery-login</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
