@@ -18,6 +18,10 @@ const pages={
     title:'Your Wine Journal & Tasting History | Sips Wine Tasting Journey',
     description:'Save wines, wineries, tasting notes, past routes, and personalized Finger Lakes wine recommendations.'
   },
+  'for-wineries':{
+    title:'Sips for Finger Lakes Wineries | Tasting Menus & Traveler Insights',
+    description:'See how Sips helps Finger Lakes wineries publish tasting menus, reach trip planners, and connect favorite wines to future purchases.'
+  },
   'winery-login':{
     title:'Claim Your Finger Lakes Winery | Sips',
     description:'Claim a Finger Lakes winery profile and request secure access to publish current tasting menus on Sips.'
