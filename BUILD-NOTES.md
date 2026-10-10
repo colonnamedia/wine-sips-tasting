@@ -11,6 +11,7 @@ This is the non-secret operating record for the project. Never add passwords, AP
 | Hosting | Vercel | GitHub-connected project; production domain `https://sipswinejourney.com` |
 | Authentication and database | Supabase | Project created; browser credentials belong in Vercel environment variables |
 | Transactional email | Resend | Account created; connect to Supabase custom SMTP before public launch |
+| Subscription billing | Stripe Billing + Checkout | Integration built; test-mode prices are currently configured |
 
 ## Deferred domain email setup
 
@@ -50,6 +51,9 @@ Run these in the Supabase SQL Editor in order:
 1. `supabase/schema.sql`
 2. `supabase/trips-ratings.sql`
 3. `supabase/winery-admin.sql`
+4. `supabase/admin-mfa.sql`
+5. `supabase/premium-corks.sql`
+6. `supabase/menu-freshness.sql`
 
 The last script grants Sips administrator access to the Supabase Auth account whose email is `sipswine@yahoo.com`. If that account is created after the script runs, rerun the final `update public.profiles ...` statement.
 
@@ -61,6 +65,23 @@ The last script grants Sips administrator access to the Supabase Auth account wh
 4. The winery builds a draft manually or uploads the dashboard's CSV template.
 5. Publishing replaces the winery's previous public menu; drafts and archived menus remain private.
 6. The public `/wine-tasting` page automatically displays the published menu and its rateable wines.
+
+## Winery menu freshness policy
+
+- Default every claimed winery to a quarterly review. Partners can choose monthly, every three months, every six months, or annually.
+- Publishing a menu starts its review clock. A winery can upload a replacement, edit the current menu, or press **Confirm published menu is still current** without entering the same wines again.
+- The winery dashboard stores the menu contact email, reminder preference, last confirmation date, and next review date.
+- `public.winery_menu_refresh_queue` classifies each winery as `current`, `due_soon`, `overdue`, or `needs_schedule` for the Sips operations view and future Resend reminders.
+- Reminder email delivery is the next automation step. The database and dashboard now capture the cadence, but no email should be described as scheduled until a protected daily reminder job is deployed.
+
+## Stripe billing status
+
+- The app uses Stripe-hosted Checkout in subscription mode plus the Customer Portal.
+- Membership access is synchronized through a signature-verified Stripe webhook into Supabase.
+- Current configured Price IDs were created in Stripe test mode. Treat the paywall as test-only until live products, live prices, a live restricted API key, and a live webhook endpoint/signing secret are installed in Vercel Production.
+- Keep test credentials in Preview/Development. Use separate live credentials in Production. Store every secret as a Vercel Sensitive Environment Variable; never commit it.
+- Before launch, test checkout success, cancellation, renewal, payment failure, subscription cancellation, and portal access using Stripe test mode. Then repeat one low-cost live transaction and refund it.
+- Stripe Tax requires an active tax registration before automatic tax collection will work; decide where Sips has registration obligations before enabling it.
 
 ## Regional explorer structure
 
@@ -85,8 +106,10 @@ flight_name,vintage,wine_name,varietal,style,bottle_price,description,award,purc
 ## Current launch checklist
 
 - Confirm both Supabase environment variables are present in Vercel.
-- Run all three SQL files.
+- Run all six SQL files, including `menu-freshness.sql`.
 - Register and confirm `sipswine@yahoo.com`, then verify it has the `sips_admin` profile role.
 - Configure Resend as Supabase custom SMTP and verify the sending domain.
 - Submit a test winery claim, approve it, import a CSV, publish it, and confirm the menu appears publicly.
+- Set a quarterly menu cadence, confirm a published menu as current, and verify the next review date advances.
+- Complete Stripe test scenarios, then replace only the Vercel Production Stripe values with live-mode values.
 - Replace prototype menus with winery-approved data before promoting those listings as current.
