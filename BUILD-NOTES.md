@@ -10,16 +10,15 @@ This is the non-secret operating record for the project. Never add passwords, AP
 | Source code | GitHub | `colonnamedia/wine-sips-tasting` |
 | Hosting | Vercel | GitHub-connected project; production domain `https://sipswinejourney.com` |
 | Authentication and database | Supabase | Project created; browser credentials belong in Vercel environment variables |
-| Transactional email | Resend | Account created; connect to Supabase custom SMTP before public launch |
+| Transactional email | Resend | Sending domain verified; Supabase custom SMTP configured |
 | Subscription billing | Stripe Billing + Checkout | Integration built; test-mode prices are currently configured |
 
-## Deferred domain email setup
+## Domain email setup
 
-- Add `sipswinejourney.com` to Resend and verify the DNS records through Vercel.
-- Use `accounts@sipswinejourney.com` as the Supabase Auth sender.
-- Connect Resend custom SMTP in Supabase and brand confirmation/reset emails as **Sips — Wine Tasting Journey**.
-- Set the Supabase Site URL to `https://sipswinejourney.com` and allow `https://sipswinejourney.com/**` as a redirect URL.
-- Send a fresh signup, confirmation and password-reset test after configuration.
+- `sipswinejourney.com` is verified in Resend through Vercel DNS.
+- Supabase Auth sends through Resend as `accounts@sipswinejourney.com` with the sender name **Sips — A Wine Journey**.
+- Supabase Site URL and production redirect use `https://sipswinejourney.com`.
+- Repeat signup, confirmation and password-reset delivery tests immediately before launch.
 
 ## Premium and verified rewards direction
 
@@ -108,7 +107,7 @@ flight_name,vintage,wine_name,varietal,style,bottle_price,description,award,purc
 - Confirm both Supabase environment variables are present in Vercel.
 - Run all six SQL files, including `menu-freshness.sql`.
 - Register and confirm `sipswine@yahoo.com`, then verify it has the `sips_admin` profile role.
-- Configure Resend as Supabase custom SMTP and verify the sending domain.
+- Repeat signup, confirmation and password-reset delivery tests through Resend.
 - Submit a test winery claim, approve it, import a CSV, publish it, and confirm the menu appears publicly.
 - Set a quarterly menu cadence, confirm a published menu as current, and verify the next review date advances.
 - Complete Stripe test scenarios, then replace only the Vercel Production Stripe values with live-mode values.
