@@ -24,6 +24,7 @@ export default async function handler(request,response){
 
     const checkout=await stripe().checkout.sessions.create({
       mode:'subscription',
+      integration_identifier:'sips_club_checkout_lqavmzne',
       customer:membership?.provider_customer_ref||undefined,
       customer_email:membership?.provider_customer_ref?undefined:user.email,
       client_reference_id:user.id,
