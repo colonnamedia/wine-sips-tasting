@@ -44,7 +44,7 @@ export async function readRawBody(request){
 }
 
 export const membershipStatus=status=>({
-  trialing:'trialing',active:'active',past_due:'past_due',canceled:'cancelled',unpaid:'past_due'
+  trialing:'trialing',active:'active',past_due:'past_due',canceled:'cancelled',unpaid:'past_due',paused:'inactive',incomplete:'inactive',incomplete_expired:'inactive'
 }[status]||'inactive');
 
 export async function syncSubscription(subscription,customerEmail){
