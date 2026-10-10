@@ -16,9 +16,9 @@ export default async function handler(request,response){
       process.env.STRIPE_WEBHOOK_SECRET
     );
 
-    if(event.type==='checkout.session.completed'){
+    if(['checkout.session.completed','checkout.session.async_payment_succeeded'].includes(event.type)){
       const session=event.data.object;
-      if(typeof session.subscription==='string'){
+      if(session.payment_status!=='unpaid'&&typeof session.subscription==='string'){
         const subscription=await stripe().subscriptions.retrieve(session.subscription);
         await syncSubscription(subscription,session.customer_details?.email);
       }
@@ -26,6 +26,15 @@ export default async function handler(request,response){
 
     if(['customer.subscription.created','customer.subscription.updated','customer.subscription.deleted'].includes(event.type)){
       await syncSubscription(event.data.object);
+    }
+
+    if(['invoice.paid','invoice.payment_failed'].includes(event.type)){
+      const invoice=event.data.object;
+      const subscriptionRef=invoice.parent?.subscription_details?.subscription||invoice.subscription;
+      if(typeof subscriptionRef==='string'){
+        const subscription=await stripe().subscriptions.retrieve(subscriptionRef);
+        await syncSubscription(subscription,invoice.customer_email);
+      }
     }
 
     return json(response,200,{received:true});
